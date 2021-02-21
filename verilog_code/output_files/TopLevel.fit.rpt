@@ -1,5 +1,5 @@
 Fitter report for TopLevel
-Fri Feb 19 16:57:18 2021
+Sat Feb 20 18:13:09 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Feb 19 16:57:18 2021       ;
+; Fitter Status                      ; Successful - Sat Feb 20 18:13:09 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; TopLevel                                    ;
 ; Top-level Entity Name              ; TopLevel                                    ;
@@ -150,7 +150,7 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -197,7 +197,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/output_files/TopLevel.pin.
+The pin-out file can be found in C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/output_files/TopLevel.pin.
 
 
 +--------------------------------------------------------------------+
@@ -243,7 +243,7 @@ The pin-out file can be found in C:/Users/Daniel/Desktop/School/Winter 2021/CSE1
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )        ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%   ;
-; Peak interconnect usage (total/H/V)         ; 0.1% / 0.0% / 0.1%   ;
+; Peak interconnect usage (total/H/V)         ; 0.0% / 0.0% / 0.1%   ;
 ; Maximum fan-out                             ; 10                   ;
 ; Highest non-global fan-out                  ; 10                   ;
 ; Total fan-out                               ; 98                   ;
@@ -583,10 +583,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------+-------------------+---------+
 ; Clk                                ;                   ;         ;
 ; Reset                              ;                   ;         ;
-;      - InstFetch:IF1|ProgCtr[0]~39 ; 1                 ; 6       ;
+;      - InstFetch:IF1|ProgCtr[0]~37 ; 1                 ; 6       ;
 ;      - InstFetch:IF1|ProgCtr[0]~48 ; 1                 ; 6       ;
 ; Start                              ;                   ;         ;
-;      - InstFetch:IF1|ProgCtr[0]~39 ; 0                 ; 6       ;
+;      - InstFetch:IF1|ProgCtr[0]~37 ; 0                 ; 6       ;
 +------------------------------------+-------------------+---------+
 
 
@@ -596,7 +596,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                        ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Clk                         ; PIN_23             ; 10      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; InstFetch:IF1|ProgCtr[0]~39 ; LCCOMB_X33_Y18_N28 ; 10      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; InstFetch:IF1|ProgCtr[0]~37 ; LCCOMB_X33_Y18_N28 ; 10      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; InstFetch:IF1|ProgCtr[0]~48 ; LCCOMB_X33_Y17_N0  ; 10      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
 +-----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
@@ -615,14 +615,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 17 / 32,401 ( < 1 % ) ;
+; Block interconnects   ; 16 / 32,401 ( < 1 % ) ;
 ; C16 interconnects     ; 0 / 1,326 ( 0 % )     ;
 ; C4 interconnects      ; 3 / 21,816 ( < 1 % )  ;
 ; Direct links          ; 10 / 32,401 ( < 1 % ) ;
 ; Global clocks         ; 1 / 10 ( 10 % )       ;
 ; Local interconnects   ; 14 / 10,320 ( < 1 % ) ;
 ; R24 interconnects     ; 0 / 1,289 ( 0 % )     ;
-; R4 interconnects      ; 2 / 28,186 ( < 1 % )  ;
+; R4 interconnects      ; 0 / 28,186 ( 0 % )    ;
 +-----------------------+-----------------------+
 
 
@@ -853,7 +853,7 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node Clk~input (placed in PIN 23 (CLK1, DIFFCLK_0n)) File: C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/TopLevel.sv Line: 9
+Info (176353): Automatically promoted node Clk~input (placed in PIN 23 (CLK1, DIFFCLK_0n)) File: C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/TopLevel.sv Line: 9
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -871,7 +871,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  9 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  13 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  12 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -889,18 +889,18 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/output_files/TopLevel.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (144001): Generated suppressed messages file C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/output_files/TopLevel.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6090 megabytes
-    Info: Processing ended: Fri Feb 19 16:57:18 2021
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 6088 megabytes
+    Info: Processing ended: Sat Feb 20 18:13:10 2021
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/output_files/TopLevel.fit.smsg.
+The suppressed messages can be found in C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/output_files/TopLevel.fit.smsg.
 
 

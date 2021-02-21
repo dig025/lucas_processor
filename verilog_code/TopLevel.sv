@@ -14,6 +14,7 @@ wire [ 9:0] PgmCtr,        // program counter
 			PCTarg;
 wire [ 8:0] Instruction;   // our 9-bit opcode
 wire [ 7:0] operator1, operator2, sourceReg;  // reg_file outputs
+wire [7:0]  ReadA, ReadB;
 wire [ 7:0] InA, InB, 	   // ALU operand inputs
             ALU_out;       // ALU result
 wire [ 7:0] RegWriteValue, // data in to reg file
@@ -23,7 +24,9 @@ wire        MemWrite,	   // data_memory write enable
 			RegWrEn,	   // reg_file write enable
 			Zero,		   // ALU output = 0 flag
             Jump,	       // to program counter: jump 
-            BranchEn;	   // to program counter: branch enable
+            BranchEn,	   // to program counter: branch enable
+				GenRegEn;		// to reg file: decides whether to write to
+									// operational register or a general register
 logic[15:0] CycleCt;	   // standalone; NOT PC!
 
 // Fetch = Program Counter + Instruction ROM
@@ -43,7 +46,8 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
   Ctrl Ctrl1 (
 	.Instruction  (Instruction), // from instr_ROM
 	.Jump         (Jump),		     // to PC
-	.BranchEn     (BranchEn)		 // to PC
+	.BranchEn     (BranchEn),		 // to PC
+	.GenRegEn	  (GenRegEn)
   );
 // instruction ROM
   InstROM #(.W(9)) IR1(
@@ -57,12 +61,12 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
 	RegFile #(.W(8),.D(3)) RF1 (
 		.Clk    				  ,
 		.WriteEn   (RegWrEn)    , 
-		.RaddrA    (Instruction[5:3]),         //concatenate with 0 to give us 4 bits
-		.RaddrB    (Instruction[2:0]), 
-		.Waddr     (Instruction[5:3]), 	       // mux above
+		.Raddr    (Instruction[3:0]),         //concatenate with 0 to give us 4 bits
+		.Waddr     (Instruction[4:0]), 	       // mux above
 		.DataIn    (RegWriteValue) , 
-		.DataOutA  (ReadA        ) , 
-		.DataOutB  (ReadB		 )
+		.DataOutA  () , 
+		.DataOutB  (),
+		.DataOutC  ()
 	);
 // one pointer, two adjacent read accesses: (optional approach)
 //	.raddrA ({Instruction[5:3],1'b0});
