@@ -1,0 +1,141 @@
+# Reading pref.tcl
+# do TopLevel_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/School/Winter\ 2021/CSE141L/basic_processor_demo_export {C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/RegFile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:57:43 on Feb 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export" C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/RegFile.sv 
+# -- Compiling module RegFile
+# 
+# Top level modules:
+# 	RegFile
+# End time: 16:57:43 on Feb 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/School/Winter\ 2021/CSE141L/basic_processor_demo_export {C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/InstFetch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:57:43 on Feb 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export" C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/InstFetch.sv 
+# -- Compiling module InstFetch
+# 
+# Top level modules:
+# 	InstFetch
+# End time: 16:57:43 on Feb 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/School/Winter\ 2021/CSE141L/basic_processor_demo_export {C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/Definitions.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:57:43 on Feb 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export" C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/Definitions.sv 
+# -- Compiling package definitions
+# 
+# Top level modules:
+# 	--none--
+# End time: 16:57:43 on Feb 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/School/Winter\ 2021/CSE141L/basic_processor_demo_export {C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/DataMem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:57:43 on Feb 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export" C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/DataMem.sv 
+# -- Compiling module DataMem
+# 
+# Top level modules:
+# 	DataMem
+# End time: 16:57:44 on Feb 19,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/School/Winter\ 2021/CSE141L/basic_processor_demo_export {C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/InstROM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:57:46 on Feb 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export" C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/InstROM.sv 
+# -- Compiling module InstROM
+# 
+# Top level modules:
+# 	InstROM
+# End time: 16:57:46 on Feb 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/School/Winter\ 2021/CSE141L/basic_processor_demo_export {C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/Ctrl.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:57:46 on Feb 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export" C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/Ctrl.sv 
+# -- Compiling package Ctrl_sv_unit
+# -- Importing package definitions
+# -- Compiling module Ctrl
+# 
+# Top level modules:
+# 	Ctrl
+# End time: 16:57:46 on Feb 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/School/Winter\ 2021/CSE141L/basic_processor_demo_export {C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:57:46 on Feb 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export" C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/ALU.sv 
+# -- Compiling package ALU_sv_unit
+# -- Importing package definitions
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 16:57:46 on Feb 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/School/Winter\ 2021/CSE141L/basic_processor_demo_export {C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/TopLevel.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:57:46 on Feb 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export" C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/TopLevel.sv 
+# -- Compiling module TopLevel
+# 
+# Top level modules:
+# 	TopLevel
+# End time: 16:57:46 on Feb 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work {C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/TopLevel_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:58:02 on Feb 19,2021
+# vlog -reportprogress 300 -work work C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/TopLevel_tb.sv 
+# -- Compiling module TopLevel_tb
+# 
+# Top level modules:
+# 	TopLevel_tb
+# End time: 16:58:02 on Feb 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Cannot determine language of C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/machine_code.txt
+vsim work.TopLevel_tb
+# vsim work.TopLevel_tb 
+# Start time: 16:59:14 on Feb 19,2021
+# Loading sv_std.std
+# Loading work.TopLevel_tb
+# Loading work.TopLevel
+# Loading work.InstFetch
+# Loading work.definitions
+# Loading work.Ctrl_sv_unit
+# Loading work.Ctrl
+# Loading work.InstROM
+# Loading work.RegFile
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataMem
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'DataOutA'. The port definition is at: C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/RegFile.sv(17).
+#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/DUT/RF1 File: C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/TopLevel.sv Line: 57
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'DataOutB'. The port definition is at: C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/RegFile.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/DUT/RF1 File: C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/TopLevel.sv Line: 57
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'DataAddress'. The port definition is at: C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/DataMem.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/DUT/DM1 File: C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/basic_processor_demo_export/TopLevel.sv Line: 83
+add wave -position end  sim:/TopLevel_tb/Init
+add wave -position end  sim:/TopLevel_tb/Req
+add wave -position end  sim:/TopLevel_tb/Clk
+add wave -position end  sim:/TopLevel_tb/Ack
+run -all
+add wave -position end  sim:/TopLevel_tb/DUT/ALU_out
+run -all
+add wave -position end  sim:/TopLevel_tb/DUT/Instruction
+run -all
+run
+# End time: 17:05:17 on Feb 19,2021, Elapsed time: 0:06:03
+# Errors: 0, Warnings: 3
