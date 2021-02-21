@@ -1,0 +1,16 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor {C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/RegFile.sv}
+vlog -sv -work work +incdir+C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor {C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/InstFetch.sv}
+vlog -sv -work work +incdir+C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor {C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/Definitions.sv}
+vlog -sv -work work +incdir+C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor {C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/DataMem.sv}
+vlog -sv -work work +incdir+C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor {C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/InstROM.sv}
+vlog -sv -work work +incdir+C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor {C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/Ctrl.sv}
+vlog -sv -work work +incdir+C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor {C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/ALU.sv}
+vlog -sv -work work +incdir+C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor {C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/TopLevel.sv}
+

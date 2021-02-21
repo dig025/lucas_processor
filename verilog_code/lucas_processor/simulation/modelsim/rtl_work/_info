@@ -1,0 +1,218 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/simulation/modelsim
+vDataMem
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1613782619
+!i10b 1
+!s100 LA2hWzJH116U<Uzhc@zZS0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I?<eC3G;2i>L94YeE[BA^<3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1613439215
+8C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/DataMem.sv
+FC:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/DataMem.sv
+!i122 1
+L0 6 33
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1613782619.000000
+!s107 C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/DataMem.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/DataMem.sv|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+n@data@mem
+Xdefinitions
+R1
+R2
+!i10b 1
+!s100 1aZ50e_^FC19b0z5dW[[I3
+R3
+IlzdMo`0jMYbbEQW<UhMS92
+VlzdMo`0jMYbbEQW<UhMS92
+S1
+R0
+w1613781663
+8C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/Definitions.sv
+FC:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/Definitions.sv
+!i122 2
+L0 3 0
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/Definitions.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/Definitions.sv|
+!i113 1
+R8
+R9
+vInstFetch
+R1
+R2
+!i10b 1
+!s100 `P6hOI9oC51>^k6aeYeb^0
+R3
+IC@K3^Pe>PkQFd9>mEmYm41
+R4
+S1
+R0
+R5
+8C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/InstFetch.sv
+FC:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/InstFetch.sv
+!i122 3
+L0 8 25
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/InstFetch.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/InstFetch.sv|
+!i113 1
+R8
+R9
+n@inst@fetch
+vInstROM
+R1
+R2
+!i10b 1
+!s100 gQC527_d@AnS=hP4T=z<Z0
+R3
+Ih8ZF4D78DaAm`A0_Y8Sdl1
+R4
+S1
+R0
+w1613782349
+8C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/InstROM.sv
+FC:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/InstROM.sv
+!i122 4
+L0 11 35
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/InstROM.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/InstROM.sv|
+!i113 1
+R8
+R9
+n@inst@r@o@m
+vLUT
+R1
+R2
+!i10b 1
+!s100 NGjafEPm:=Jma<OoShR=83
+R3
+Iji9NDQ8V3[Rb>38zVn5gg0
+R4
+S1
+R0
+R5
+8C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/LUT.sv
+FC:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/LUT.sv
+!i122 5
+L0 6 14
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/LUT.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/LUT.sv|
+!i113 1
+R8
+R9
+n@l@u@t
+vRegFile
+R1
+R2
+!i10b 1
+!s100 JX8=DDL847I1ghVm2C;ZD1
+R3
+IooKhIiYiAiaMoGAj3D[]60
+R4
+S1
+R0
+w1613452169
+8C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/RegFile.sv
+FC:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/RegFile.sv
+!i122 6
+L0 10 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/RegFile.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/RegFile.sv|
+!i113 1
+R8
+R9
+n@reg@file
+vTopLevel
+R1
+R2
+!i10b 1
+!s100 aOhBDO99gLkD35UIIB^Nc3
+R3
+IRb_]CCXD]WJJF>I3T6_ea2
+R4
+S1
+R0
+w1613452166
+8C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/TopLevel.sv
+FC:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/TopLevel.sv
+!i122 7
+L0 6 96
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/TopLevel.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/TopLevel.sv|
+!i113 1
+R8
+R9
+n@top@level
+vTopLevel_tb
+R1
+R2
+!i10b 1
+!s100 az_0a>Ylgj7k1]BhQjST_0
+R3
+IFoc9_dl::JR3YPlA=:1Fl1
+R4
+S1
+R0
+R5
+8C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/TopLevel_tb.sv
+FC:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/TopLevel_tb.sv
+!i122 8
+L0 8 53
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/TopLevel_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Diego/Desktop/141L/verilog_code/lucas_processor/TopLevel_tb.sv|
+!i113 1
+R8
+R9
+n@top@level_tb

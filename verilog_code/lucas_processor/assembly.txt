@@ -1,0 +1,5 @@
+is 5              //R[r0] = 5
+fgo r1 r0         //R[r1] = R[r0]
+is 7              //R[r0] = 7
+fgo r2 r0         //R[r2] = R[r0]
+add r3            //R[r3] = R[r1] + R[r2]

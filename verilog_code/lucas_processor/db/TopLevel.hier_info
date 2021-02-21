@@ -1,0 +1,22 @@
+|InstROM
+InstAddress[0] => inst_rom.RADDR
+InstAddress[1] => inst_rom.RADDR1
+InstAddress[2] => inst_rom.RADDR2
+InstAddress[3] => inst_rom.RADDR3
+InstAddress[4] => inst_rom.RADDR4
+InstAddress[5] => inst_rom.RADDR5
+InstAddress[6] => inst_rom.RADDR6
+InstAddress[7] => inst_rom.RADDR7
+InstAddress[8] => inst_rom.RADDR8
+InstAddress[9] => inst_rom.RADDR9
+InstOut[0] << inst_rom.DATAOUT
+InstOut[1] << inst_rom.DATAOUT1
+InstOut[2] << inst_rom.DATAOUT2
+InstOut[3] << inst_rom.DATAOUT3
+InstOut[4] << inst_rom.DATAOUT4
+InstOut[5] << inst_rom.DATAOUT5
+InstOut[6] << inst_rom.DATAOUT6
+InstOut[7] << inst_rom.DATAOUT7
+InstOut[8] << inst_rom.DATAOUT8
+
+
