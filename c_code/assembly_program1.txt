@@ -1,0 +1,174 @@
+// message to be encypted will be stored at mem[0:53]
+//encrypted message
+
+//setup:
+  is  0      
+  fig r3      //r3 = 0 loop counter
+  is  53       
+  fig r4      //r4 = 53 max loop itr
+  is  61
+  fig r5      //r5 = 61 mem loc of number of spaces/preamble
+  is  62      
+  fig r6      // r6 = 62 mem loc of tap sequence
+  lb  r2 r6   // r2 = mem[r6]
+  is  0
+  fig r1      // r1 = 0
+  add r6      // r6 = r2 + r1
+  is  63
+  fig r7      // r7 = 63 mem loc of start state for lfsr
+  lb  r2 r7    // r2 = mem[r7]
+  is  0       
+  fig r1      // r1 = 0
+  add r7      // r7 = mem[r7] + 0
+  is  64      
+  fig r8      // r8 = 64 where to start writing   instruction #19
+
+  // space char preamble to mem
+
+  lb r1 r5    // r1 = number of spaces
+  is 26       // max number of spaces
+  fig r2      // r2 = 26
+  slt r15     // r15 will be 1 if r1 < 26 0 otherwise
+  fgo r15 r1  // r1 = r15
+  is 1        // r0 = 1
+  fig r2      // r2 = r0
+  is 2
+  beq r0      // branch to check if too small   instruction #28
+  is 26       // branch not taken so we have too many spaces... set it to 26
+  fig r5      // r5 = num spaces = 26
+  fgo r5 r2   // r2 = num spaces  
+  is 10       // min number of spaces
+  fig r1      // r1 = 10
+  slt r15     // r15 will be 1 if r1(10) < num spaces 0 otherwise
+  fgo r15 r1  // r1 = r15
+  is 1        // r0 = 1
+  fig r2      // r2 = r0
+  is 2      
+  beq r0      // dont set num spaces to 10 if it is greater   instruction #39
+  is 10       // branch not taken so we have too few spaces... set it to 10
+  fig r5      // r5 = num spaces = 26
+
+  //change num spaces if too many or too few
+  //encrypt space char with current state
+  //calculate parity
+  //move state to next
+
+//char_read: 
+  lb  r1  r3    // read char from  R[r1] = mem[r3]
+  fgo r7  r2    // state in r7
+  xor r15       // encrypts before adding parity bit
+  fgo r15  r1   // r1 = r15 (result of xor) aka:encrypted char
+  is  0x7F      
+  fig r2
+  and r14       // r14 stores encrypted char with MSB = 0
+  
+  // initial condition check for while(encrypted)
+  is  0
+  fig r2        // r2 = 0
+  fig r13       // r13 = 0 (parity bit initialization)
+  fgo r14  r1   // r1 = encrypted
+  is  16        (16 for how many instructions after pc+1)
+  beq r0        //to after while loop for encrypted
+
+  // actual parity bit calculation
+  fgo r13  r1   // r1 = r13 (parity)
+  is  1         
+  fig r2        // r2 = 1
+  xor r13       // r13 = r13 ^ 1
+
+  // decrement and condition check
+  is  -1
+  fig r2        // r2 = -1
+  fgo r14  r1   // r1 = encrypted
+  add r14       // r14 = encrypted - 1
+  fgo r14  r1   
+  is  0
+  fig r2        // r2 = 0
+  is  3 
+  beq r0        //to after while loop for encrypted because encrypted=0
+  fig r1        // r1 = 0
+  is  -16
+  beq r0        //because 0=0, branch to beginning of while(encrypted)
+  
+  // left shifting parity bit by 7 to fit encrypt char
+  fgo r13  r1   // r1 = r13 (parity)
+  is  7
+  fig r2        // r2 = 7
+  sll r13       // r13 = r13 << 7
+  // and masking encrypted message to make MSB = 0
+  fgo r15  r1   // r1 = r15
+  is  0x7F
+  fig r2        // r2 = 0x7F
+  and r15       // r15 = r15 & 0x7F
+  // encrypted message with parity bit r15
+  fgo r13  r1   // r1 = r13
+  fgo r15  r2   // r2 = r15
+  or  r15       // r15 = r15 | r13
+  // storing message into data mem and incrementing location
+  fgo r15  r1   // r1 = 15
+  sb  r1   r8   // mem[r8] = r1
+  fgo r8   r1   // r1 = r8
+  is  1        
+  fig r2        // r2 = 1
+  add r8        // r8 = r8 + 1
+
+  // creating next state for while(ones)
+  fgo r7  r1    // r1 = r7 (state)
+  fgo r6  r2    // r2 = r6 (tap)
+  and r14       // ones = state & taps (r14 = r6 & r7)
+  fgo r7  r1    
+  is  1
+  fig r2
+  sll r7       // r7 = r7 << 1
+  is  0
+  fig r13      // r13 = lsb for new state (bit)
+  
+  // initial condition check for while(ones)
+  is  0
+  fig r2        // r2 = 0
+  fgo r14  r1   // r1 = ones
+  is  16
+  beq r0        //to after while(ones)
+  
+  // start of while ones
+  fgo r13  r1
+  is  1
+  fig r2
+  xor r13     // r13 = r13 ^ 0x01
+  // decrement and condition check
+  is  -1
+  fig r2        // r2 = -1
+  fgo r14  r1   // r1 = ones
+  add r14       // r14 = ones - 1
+  fgo r14  r1   
+  is  0
+  fig r2        // r2 = 0
+  is  3   
+  beq r0        //to after while loop for ones because ones=0
+  fig r1        // r1 = 0
+  is  -16
+  beq r0        //because 0=0, branch to beginning of while(ones)
+
+  // after while(ones) we set the bit for the new state
+  fgo r7  r1    // r1 = r7 (state)
+  is  0x7E
+  fig r2
+  and r7        // r7 = state & 0x7E
+  fgo r7  r1    
+  fgo r13 r2    // r2 = r13 (bit)
+  or  r7        // r7 = r7 | bit
+
+  // for incrementing for loop for char_read
+  is  1         
+  fig r2       // r2 = 1
+  fgo r3   r1   // r1 = r3 (loop counter) 
+  add r3        // r3 = r3 + 1  
+  fgo r3   r1   // r1 = r3
+  fgo r4   r2   // r2 = r4
+  slt r15       // r15 = 1 if r1 < r2, 0 otherwise
+  fgo r15  r1   // r1 = r15
+  fig r2        // r2 = 1
+  is  -94        // how many instructions
+  beq r0
+
+  // This portion handles the loop 
