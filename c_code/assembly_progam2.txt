@@ -2,20 +2,144 @@
 
 setup:
   is  0      
-  fog r3        // r3 = 0 loop counter
-  is  10       
-  fog r4        // r4 = 10 max loop itr
+  fig r3        // r3 = 0 outer loop counter
+  fig r4        // r4 = 0 inner loop counter
+  is  9       
+  fig r5        // r5 = 9 max loop itr
   is  64        
-  fog r5        // r5 = 64 start of memory for encrypted message
+  fig r6        // r6 = 64 start of memory for encrypted message
+  is  0x20      
+  fig r7        // r7 = 0x20 
 
-// finding tap_pattern
+
+// looping through each tap pattern
+start_new_tap:
+  // for checking to see which tap pattern we should look at  
+  is  0
+  fig r15       // r15
+  fgo r15 r1    // r1 = 0
+  fgo r3  r2    // r2(outer loop counter) = r3
+  is  // how many instructions to tap0
+  fig r14
+  beq r14
+
+  is  1 
+  fig r15
+  fgo r15 r1
+  fgo r3  r2
+  is  // how many instructions to tap1
+  fig r14
+  beq r14
+
+  is  2 
+  fig r15
+  fgo r15 r1
+  fgo r3  r2
+  is  // how many instructions to tap2
+  fig r14
+  beq r14
+
+  is  3 
+  fig r15
+  fgo r15 r1
+  fgo r3  r2
+  is  // how many instructions to tap3
+  fig r14
+  beq r14
+
+  is  4 
+  fig r15
+  fgo r15 r1
+  fgo r3  r2
+  is  // how many instructions to tap4
+  fig r14
+  beq r14
+
+  is  5 
+  fig r15
+  fgo r15 r1
+  fgo r3  r2
+  is  // how many instructions to tap5
+  fig r14
+  beq r14
+
+  is  6 
+  fig r15
+  fgo r15 r1
+  fgo r3  r2
+  is  // how many instructions to tap6
+  fig r14
+  beq r14
+
+  is  7
+  fig r15
+  fgo r15 r1
+  fgo r3  r2
+  is  // how many instructions to tap7
+  fig r14
+  beq r14
+
+  is  8
+  fig r15
+  fgo r15 r1
+  fgo r3  r2
+  is  // how many instructions to tap1
+  fig r14
+  beq r14
+
+// tap pattern being tested stored in r8
+tap0:
+  is  0x60
+  fig r8
+tap1:
+  is  0x48
+  fig r8
+tap2:
+  is  0x78
+  fig r8
+tap3:
+  is  0x72
+  fig r8
+tap4:
+  is  0x6A
+  fig r8
+tap5:
+  is  0x69
+  fig r8
+tap6:
+  is  0x5C
+  fig r8
+tap7:
+  is  0x7E
+  fig r8
+tap8:
+  is  0x6B
+  fig r8
+
+// looping through each state and state after
 start_new_state:
-  // r5 will be for curr state char
-  // r6 will be for the state char after
+  // r8 will be for curr state char
+  lb  r1  r6    // r1 = mem[r5]
+  fgo r7  r2    // r2 = r6 = 0x20
+  xor r8        // r8 = r1 ^ r2
+
+  // incrementing memory location
+  is  1
+  fig r15       // r15 = 1
+  fgo r15 r2    // r2 = r15 = 1
+  fgo r6  r1    // r1 = r5 (memory location)
+  add r6        // incremented memory location r5 = r5 + 1
+
+  // r9 will be for the state char after
+  lb  r1  r6    // r1 = mem[r5]
+  fgo r7  r2    // r2 = r6 = 0x20
+  xor r9        // r8 = r1 ^ r2
+
+
 
   // for looping
   is  1         
-  fog r15       // r15 = 1
+  fig r15       // r15 = 1
   fgo r3   r1    // r1 = r3 (loop counter) 
   fgo r15  r2   // r2 = r15 = 1
   add r3        // r3 = r3 + 1  
@@ -25,5 +149,5 @@ start_new_state:
   fgo r14  r1   // r1 = r14
   fgo r15  r2   // r2 = 1
   is  // value here defined by how many instructions for assembly
-  fog r13       // r13 = # of instructions since start of loop
+  fig r13       // r13 = # of instructions since start of loop
   beq r13
