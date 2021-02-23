@@ -28,15 +28,23 @@ w_file = open("machine_code.txt", "w")
 #7. finally add them up as a string and write to file
 with open(filename, 'r') as f:
   for line in f:
-    print(line)
     str_array = line.split()
+
+    if(len(str_array) == 0):
+      continue
+
     instruction = str_array[0]
 
-    print(instruction)
-    print(str_array)
-    if instruction == "is":
+    if(instruction[0] == "/"):
+      #do nothing
+      continue
+    elif instruction == "is":
       opcode = "1"
-      imm = '{0:08b}'.format(int(str_array[1]))
+      imm_num = int(str_array[1], 0)
+      if(imm_num < 0):
+        imm_num = imm_num + (1<<32)
+      imm = '{0:08b}'.format(imm_num)
+      imm = imm[-8:]
       machine_code = opcode + imm
     else:
       if instruction == "add":
@@ -112,6 +120,7 @@ with open(filename, 'r') as f:
         
         machine_code = opcode + func + op_reg + gen_reg
 
+    print(machine_code)
     w_file.write(machine_code + '\n' )
 
   w_file.close()
