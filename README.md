@@ -1,7 +1,6 @@
 # Lucas Processor
 ### architects: Kyung Lee and Diego Gomez
 
-NOTE: THIS IS NOT OUR SUMMARY OF THIS DOC... SO CHANGE IT OR PLAGARISM
 This document describes the architecture of the Lucas Processor
 
 This CPU is a very reduced RISC architecture and uses MIPS as inspiration. The big difference is that it uses 9-bit instructions and not a bit more! It was designed to do specific tasks well and not much else. This is not a general purpose architecture.
