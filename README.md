@@ -1,5 +1,5 @@
 # Lucas Processor
-### authors: Kyung Lee and Diego Gomez
+### architects: Kyung Lee and Diego Gomez
 
 NOTE: THIS IS NOT OUR SUMMARY OF THIS DOC... SO CHANGE IT OR PLAGARISM
 This document describes the architecture of the Lucas Processor
