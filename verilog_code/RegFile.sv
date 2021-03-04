@@ -7,13 +7,15 @@
 /* parameters are compile time directives 
        this can be an any-size reg_file: just override the params!
 */
+import definitions::*;			         // includes package "definitions"
 module RegFile #(parameter W=8, D=4)(		  // W = data path width; D = pointer width
   input                Clk,
                        WriteEn,
-  input        [D-1:0] Raddr,				  // address pointers
-                       //RaddrB,
-							  //RaddrC,
-                       Waddr,
+  input        [D-1:0] Regaddr,				  // address pointers
+  input			[7:0]   Imm,
+  input logic      	  OpReg,
+  input			[1:0]   Function,
+  input 			[1:0]	  OpCode,
   input        [W-1:0] DataIn,
   output       [W-1:0] DataOutA,			  // showing two different ways to handle DataOutX, for
   output logic [W-1:0] DataOutB,  //   pedagogic reasons only
@@ -30,11 +32,20 @@ logic [W-1:0] Registers[2**D];	  // or just registers[16] if we know D=4 always
 */
 assign DataOutA = Registers[1];	  // can't read from addr 0, just like MIPS
 assign DataOutB = Registers[2];    // can read from addr 0, just like ARM
-assign DataOutC = Registers[Raddr];
+assign DataOutC = Registers[Regaddr];
+
 
 // sequential (clocked) writes 
 always_ff @ (posedge Clk)
-  if (WriteEn)	                             // works just like data_memory writes
-    Registers[Waddr] <= DataIn;
+  if (WriteEn) begin	             // works just like data_memory writes
+    if (OpCode[1] == 1'b1)
+		Registers[0] <= Imm;
+	 else if (OpCode == kRLSTYPE && Function == kFIG)
+		Registers[Regaddr] = Registers[0];
+	 else if (OpCode == kRLSTYPE && Function == kFGO)
+		Registers[OpReg+2'b01] = Registers[Regaddr];
+	 else
+	   Registers[Regaddr] <= DataIn;
+  end
 
 endmodule

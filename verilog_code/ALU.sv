@@ -9,16 +9,16 @@ import definitions::*;			         // includes package "definitions"
 module ALU(
   input        [7:0] InputA,             // data inputs
                      InputB,
-  input        [2:0] OP,		         // ALU opcode, part of microcode
+  input        [2:0] Function,		         // ALU opcode, part of microcode
   output logic [7:0] Out,		         // or:  output reg [7:0] OUT,
-  output logic       Zero                // output = zero flag
+  output logic       takeBranch        // output = 1 when beq is true 0 when false
     );								    
 	 
   op_mne op_mnemonic;			         // type enum: used for convenient waveform viewing
 	
   always_comb begin
     Out = 0;                             // No Op = default
-    case(OP)
+    case(Function)
       kADD : Out = InputA + InputB;      // add 
 		kOR  : Out = InputA | InputB;
 		kXOR : Out = InputA ^ InputB;
@@ -27,20 +27,17 @@ module ALU(
 		kEQ  : Out = InputA == InputB;
 		kSLL : Out = InputA << InputB;
 		kSRL : Out = {1'b0, InputA[7:1]};
-      //kLSH : Out = InputA << 1;  	     // shift left 
-	  //kRSH : Out = {1'b0, InputA[7:1]};  // shift right
- 	  //kXOR : Out = InputA ^ InputB;      // exclusive OR
-      //kAND : Out = InputA & InputB;      // bitwise AND
     endcase
   end
 
-  always_comb							  // assign Zero = !Out;
-    case(Out)
-      'b0     : Zero = 1'b1;
-	  default : Zero = 1'b0;
-    endcase
+  assign takeBranch = Out;
+//  always_comb										
+//    case(Out)
+//      1'b0   : takeBranch = 1'b1;
+//	  default : takeBranch = 1'b0;
+//    endcase
 
   always_comb
-    op_mnemonic = op_mne'(OP);			 // displays operation name in waveform viewer
+    op_mnemonic = op_mne'(Function);			 // displays operation name in waveform viewer
 
 endmodule
