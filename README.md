@@ -19,7 +19,7 @@ What follows are the specifications for the three main types of instructions our
 
 The first two bits in an instruction represent an op-code,
 with R-Type instructions always having an op-code of 00.
-The func field selects which R-type operation is to be performed using the two operation registers on the registers.
+The func field selects which R-type operation is to be performed using the two operation registers.
 rt/rs is the register in which the return value of the operation will be stored in.
 However on beq it is used as the amount to branch relative to pc. 
 
