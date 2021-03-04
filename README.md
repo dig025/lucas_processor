@@ -26,7 +26,7 @@ However on beq it is used as the amount to branch relative to pc.
 ### R-TYPE FUNC OPTIONS
 
     0 0 0 – ADD (add the contents of r1 and r2, then store result in rt)
-    0 0 1 – XOR (add the contents of r1 and r2, then store result in rt)
+    0 0 1 – XOR (bitwise XOR the contents of r1 and r2, then store result in rt)
     0 1 0 – AND (bitwise AND the contents of r1 and r2, then store the result in rt)
     0 1 1 – SLL (the contents of r1 is logically shifted left by the contents of r2, then store the result in rt)
     1 0 0 – SLT (if the contents of r1 is less than the contents of r2, store a 1 in rt, otherwise store 0 in rt)
