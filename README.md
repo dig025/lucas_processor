@@ -3,7 +3,7 @@
 
 This document describes the architecture of the Lucas Processor
 
-This CPU is a very reduced RISC architecture and uses MIPS as inspiration. The big difference is that it uses 9-bit instructions and not a bit more! It was designed to do specific tasks well and not much else. This is not a general purpose architecture.
+This CPU is a very reduced RISC architecture and uses MIPS as inspiration. The big difference is that it uses 9-bit instructions and not a bit more! It was designed to do specific tasks well and not much else. This is not a general purpose architecture. The way Lucas is able to operate with only 9 bits is by specifying three special registers. The first register, r0, is used only for loading immediate values. The next two registers, r1 and r2, are operation registers. All arithmetic is done using r1 and r2 as operands.
 
 ## <p align=center>INSTRUCTION SYNTAX</p>
 What follows are the specifications for the three main types of instructions our CPU can handle:
