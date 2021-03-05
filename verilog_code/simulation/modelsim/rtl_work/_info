@@ -9,30 +9,360 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/simulation/modelsim
-vRegFile
-DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1613869524
+vALU
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 DXx4 work 11 definitions 0 22 W0F?dZJjDFVkA^Wk79mUH1
+DXx4 work 11 ALU_sv_unit 0 22 Ge95[m_JZOblU]feQZ;Z_3
+Z3 !s110 1614907628
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
 !i10b 1
-!s100 YDl7^dIABglV65[K:279`2
-!s11b Dg1SIo80bB@j0V0VzS_@n1
-IHB]^Bo;EdgEm1TbG51A3T2
-VDg1SIo80bB@j0V0VzS_@n1
+!s100 D@=nn1bAODkQn57WG2`KU2
+IBfHi>hC]kZA_E2nSe:FQa0
+!s105 ALU_sv_unit
 S1
 R0
-w1613468014
-8C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/RegFile.sv
-FC:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/RegFile.sv
-!i122 0
-L0 10 28
-OV;L;2020.1;71
+Z5 w1614900754
+Z6 8C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/ALU.sv
+Z7 FC:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/ALU.sv
+!i122 6
+L0 9 36
+Z8 OV;L;2020.1;71
+31
+Z9 !s108 1614907628.000000
+Z10 !s107 C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/ALU.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code|C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/ALU.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code}
+Z14 tCvgOpt 0
+n@a@l@u
+XALU_sv_unit
+R1
+R2
+R3
+VGe95[m_JZOblU]feQZ;Z_3
+r1
+!s85 0
+!i10b 1
+!s100 ^C6Z9VX=66bHb6dLnAIf[2
+IGe95[m_JZOblU]feQZ;Z_3
+!i103 1
+S1
+R0
+R5
+R6
+R7
+!i122 6
+L0 8 0
+R8
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@a@l@u_sv_unit
+vCtrl
+R1
+R2
+DXx4 work 12 Ctrl_sv_unit 0 22 <UGOXjAY^<zJncAIl4C9]3
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 E^1G4>BSJ<eVlKId7Tk@?2
+I>JHB3Nn[B9`V0@SLQ[K<00
+!s105 Ctrl_sv_unit
+S1
+R0
+Z15 w1614900312
+Z16 8C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/Ctrl.sv
+Z17 FC:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/Ctrl.sv
+!i122 5
+Z18 L0 6 29
+R8
+31
+R9
+Z19 !s107 C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/Ctrl.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code|C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/Ctrl.sv|
+!i113 1
+R12
+R13
+R14
+n@ctrl
+XCtrl_sv_unit
+R1
+R2
+R3
+V<UGOXjAY^<zJncAIl4C9]3
+r1
+!s85 0
+!i10b 1
+!s100 lhhg7h3mDEU`_Bkg05j_N3
+I<UGOXjAY^<zJncAIl4C9]3
+!i103 1
+S1
+R0
+R15
+R16
+R17
+!i122 5
+L0 2 0
+R8
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+n@ctrl_sv_unit
+vdata_mem
+R1
+Z21 !s110 1614907627
+!i10b 1
+!s100 AR?>O43cfnk:6zhoo`l253
+Z22 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I`=gnH2[bMZkShaefeY;Ik2
+R4
+S1
+R0
+w1614906137
+8C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/data_mem.sv
+FC:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/data_mem.sv
+!i122 2
+R18
+R8
 r1
 !s85 0
 31
-!s108 1613869524.000000
-!s107 C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/RegFile.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code|C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/RegFile.sv|
+Z23 !s108 1614907627.000000
+!s107 C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/data_mem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code|C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/data_mem.sv|
 !i113 1
-o-sv -work work
-!s92 -sv -work work {+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code}
-tCvgOpt 0
+R12
+R13
+R14
+Xdefinitions
+R1
+R21
+!i10b 1
+!s100 h?Ekd<aHPlQ904hOS6B7U0
+R22
+IW0F?dZJjDFVkA^Wk79mUH1
+VW0F?dZJjDFVkA^Wk79mUH1
+S1
+R0
+w1614902351
+8C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/Definitions.sv
+FC:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/Definitions.sv
+!i122 1
+L0 3 0
+R8
+r1
+!s85 0
+31
+!s108 1614907626.000000
+!s107 C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/Definitions.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code|C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/Definitions.sv|
+!i113 1
+R12
+R13
+R14
+vencrypt_tb
+R1
+!s110 1614907634
+!i10b 1
+!s100 KoLERK1Mo5JlV55D7Cz^]3
+R22
+I3Uf`QmPM32eBOVDnVSfEI3
+R4
+S1
+R0
+w1614904753
+8C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/program1_tb1.sv
+FC:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/program1_tb1.sv
+!i122 8
+L0 7 148
+R8
+r1
+!s85 0
+31
+!s108 1614907634.000000
+!s107 C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/program1_tb1.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/program1_tb1.sv|
+!i113 1
+o-work work
+R14
+vInstFetch
+R1
+!s110 1614907625
+!i10b 1
+!s100 @9aX6>9NW_0S>EZ59kc8A2
+R22
+Im_hnPaJ320Bde<g:E4G=>0
+R4
+S1
+R0
+w1614906444
+8C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/InstFetch.sv
+FC:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/InstFetch.sv
+!i122 0
+L0 8 22
+R8
+r1
+!s85 0
+31
+!s108 1614907625.000000
+!s107 C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/InstFetch.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code|C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/InstFetch.sv|
+!i113 1
+R12
+R13
+R14
+n@inst@fetch
+vInstROM
+R1
+R3
+!i10b 1
+!s100 5IdJ`kfZcm9czG[VDWnY<2
+R22
+IleGRCKAAeWki4Yc?AY2cg2
+R4
+S1
+R0
+w1614898800
+8C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/InstROM.sv
+FC:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/InstROM.sv
+!i122 4
+L0 11 14
+R8
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/InstROM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code|C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/InstROM.sv|
+!i113 1
+R12
+R13
+R14
+n@inst@r@o@m
+vRegFile
+R1
+R2
+DXx4 work 15 RegFile_sv_unit 0 22 8Qc?QMTj>6lIE2G3OnilU2
+R21
+R4
+r1
+!s85 0
+!i10b 1
+!s100 2>GFZEF8nk[XSZih1?hIS0
+IU8A]5J65_kg[AC]eB_gUP0
+!s105 RegFile_sv_unit
+S1
+R0
+Z24 w1614899913
+Z25 8C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/RegFile.sv
+Z26 FC:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/RegFile.sv
+!i122 3
+L0 11 41
+R8
+31
+R23
+Z27 !s107 C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/RegFile.sv|
+Z28 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code|C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/RegFile.sv|
+!i113 1
+R12
+R13
+R14
 n@reg@file
+XRegFile_sv_unit
+R1
+R2
+R21
+V8Qc?QMTj>6lIE2G3OnilU2
+r1
+!s85 0
+!i10b 1
+!s100 <m`Yn6czBfNb=o=Q@J2DK1
+I8Qc?QMTj>6lIE2G3OnilU2
+!i103 1
+S1
+R0
+R24
+R25
+R26
+!i122 3
+L0 10 0
+R8
+31
+R23
+R27
+R28
+!i113 1
+R12
+R13
+R14
+n@reg@file_sv_unit
+vtop_level
+R1
+R2
+DXx4 work 17 top_level_sv_unit 0 22 BLL99BRFm5^`Z>:V39of[0
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 [B_>h;D7SHXhz`oDd]:K83
+I9?SbQU99cz?DNBGfd`0F=1
+!s105 top_level_sv_unit
+S1
+R0
+Z29 w1614906515
+Z30 8C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/top_level.sv
+Z31 FC:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/top_level.sv
+!i122 7
+L0 7 108
+R8
+31
+R9
+Z32 !s107 C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/top_level.sv|
+Z33 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code|C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/top_level.sv|
+!i113 1
+R12
+R13
+R14
+Xtop_level_sv_unit
+R1
+R2
+R3
+VBLL99BRFm5^`Z>:V39of[0
+r1
+!s85 0
+!i10b 1
+!s100 1`VkeX2n5=U>IGPf>387L3
+IBLL99BRFm5^`Z>:V39of[0
+!i103 1
+S1
+R0
+R29
+R30
+R31
+!i122 7
+L0 6 0
+R8
+31
+R9
+R32
+R33
+!i113 1
+R12
+R13
+R14

@@ -22,9 +22,9 @@ module InstFetch(
 	else if(Start)						// hold while start asserted; commence when released
 	  ProgCtr <= ProgCtr;
 	else if(BranchRelEn && ALU_flag)    // conditional relative jump
-	  ProgCtr <= Target + ProgCtr + 1;
+	  ProgCtr <= Target + ProgCtr + 10'b1;
 	else
-	  ProgCtr <= ProgCtr+'b1; 	        // default increment (no need for ARM/MIPS +4 -- why?)
+	  ProgCtr <= ProgCtr + 10'b1; 	        // default increment (no need for ARM/MIPS +4 -- why?)
 
 endmodule
 

@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at program1_tb1.sv(17): object "lfsr_ptrn" differs only in case from object "LFSR_ptrn" in the same scope File: C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/program1_tb1.sv Line: 17
+Warning (10268): Verilog HDL information at RegFile.sv(39): always construct contains both blocking and non-blocking assignments File: C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/RegFile.sv Line: 39

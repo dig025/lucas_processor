@@ -1,0 +1,38 @@
+# Compile of ALU.sv failed with 1 errors.
+# Compile of Ctrl.sv failed with 5 errors.
+# Compile of data_mem.sv was successful.
+# Compile of Definitions.sv was successful.
+# Compile of InstFetch.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of LUT.sv was successful.
+# Compile of program1_tb1.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of top_level.sv was successful.
+# 10 compiles, 2 failed with 6 errors.
+# Compile of ALU.sv was successful.
+# Compile of Ctrl.sv was successful.
+# Compile of data_mem.sv was successful.
+# Compile of Definitions.sv was successful.
+# Compile of InstFetch.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of LUT.sv was successful.
+# Compile of program1_tb1.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of top_level.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:19:36 on Mar 04,2021
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# ** Error: (vlog-66) Execution of vlib.exe failed. Please check the error log for more details.
+# End time: 17:19:36 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:19:36 on Mar 04,2021
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# ** Error: (vcom-66) Execution of vlib.exe failed. Please check the error log for more details.
+# End time: 17:19:36 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
