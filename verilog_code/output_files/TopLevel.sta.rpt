@@ -1,5 +1,5 @@
 Timing Analyzer report for TopLevel
-Wed Mar 03 18:08:21 2021
+Thu Mar 04 16:22:15 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -99,7 +99,7 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.04        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -147,7 +147,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; Clk   ; 0.481 ; 0.000              ;
+; Clk   ; 0.480 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -182,23 +182,23 @@ No paths to report.
 ; -0.702 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.633      ;
 ; -0.621 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.552      ;
 ; -0.594 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.511      ;
-; -0.590 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.507      ;
+; -0.589 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.506      ;
+; -0.589 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.506      ;
 ; -0.588 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.505      ;
-; -0.588 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.505      ;
 ; -0.586 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.517      ;
 ; -0.586 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.517      ;
-; -0.584 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.501      ;
+; -0.583 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.500      ;
 ; -0.581 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.865      ;
 ; -0.581 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.865      ;
 ; -0.580 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.511      ;
 ; -0.580 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.511      ;
 ; -0.575 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.859      ;
-; -0.511 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.428      ;
+; -0.513 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.430      ;
 ; -0.509 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.440      ;
 ; -0.505 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.436      ;
 ; -0.500 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.784      ;
-; -0.472 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.389      ;
-; -0.472 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.389      ;
+; -0.473 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.390      ;
+; -0.471 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.388      ;
 ; -0.470 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[1] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.401      ;
 ; -0.468 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.399      ;
 ; -0.465 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.749      ;
@@ -213,23 +213,23 @@ No paths to report.
 ; -0.347 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.631      ;
 ; -0.343 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.627      ;
 ; -0.343 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.627      ;
-; -0.338 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.622      ;
+; -0.337 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.621      ;
 ; -0.337 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.621      ;
 ; -0.272 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.556      ;
-; -0.260 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.544      ;
+; -0.259 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.543      ;
 ; -0.231 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.515      ;
-; -0.222 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.506      ;
+; -0.221 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.505      ;
 ; -0.221 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.505      ;
-; -0.144 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.428      ;
-; -0.106 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.390      ;
+; -0.143 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.427      ;
+; -0.105 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.289      ; 1.389      ;
 ; -0.084 ; InstFetch:IF1|ProgCtr[9] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 1.001      ;
-; -0.079 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 0.996      ;
+; -0.081 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 0.998      ;
 ; -0.079 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.010      ;
-; -0.078 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 0.995      ;
+; -0.076 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 0.993      ;
 ; -0.073 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[0] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 1.004      ;
-; -0.065 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 0.996      ;
+; -0.064 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 0.995      ;
 ; -0.058 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 0.975      ;
-; -0.055 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 0.972      ;
+; -0.054 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.078     ; 0.971      ;
 ; -0.051 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[1] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 0.982      ;
 ; -0.044 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.064     ; 0.975      ;
 +--------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
@@ -240,29 +240,29 @@ No paths to report.
 +-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                ; To Node                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
-; 0.481 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.069      ;
-; 0.483 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.071      ;
-; 0.541 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 0.776      ;
-; 0.543 ; InstFetch:IF1|ProgCtr[9] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 0.778      ;
-; 0.544 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 0.779      ;
-; 0.546 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 0.781      ;
-; 0.546 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 0.781      ;
+; 0.480 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.068      ;
+; 0.482 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.070      ;
+; 0.542 ; InstFetch:IF1|ProgCtr[9] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 0.777      ;
+; 0.542 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 0.777      ;
+; 0.545 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 0.780      ;
+; 0.545 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 0.780      ;
+; 0.547 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 0.782      ;
 ; 0.559 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 0.780      ;
-; 0.561 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 0.782      ;
+; 0.560 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 0.781      ;
 ; 0.568 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[1] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 0.789      ;
 ; 0.569 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 0.790      ;
 ; 0.576 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.164      ;
 ; 0.578 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.166      ;
 ; 0.592 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[0] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 0.813      ;
-; 0.593 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.181      ;
-; 0.595 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.183      ;
+; 0.592 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.180      ;
+; 0.594 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.182      ;
 ; 0.602 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.190      ;
 ; 0.604 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.192      ;
 ; 0.688 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.276      ;
 ; 0.690 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.278      ;
 ; 0.698 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.286      ;
 ; 0.700 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.288      ;
-; 0.705 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.293      ;
+; 0.704 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.292      ;
 ; 0.714 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.302      ;
 ; 0.716 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.304      ;
 ; 0.716 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.304      ;
@@ -270,31 +270,31 @@ No paths to report.
 ; 0.800 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.388      ;
 ; 0.810 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.398      ;
 ; 0.812 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.400      ;
-; 0.816 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.051      ;
-; 0.818 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.053      ;
+; 0.817 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.052      ;
+; 0.819 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.054      ;
 ; 0.826 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.414      ;
 ; 0.828 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.416      ;
 ; 0.830 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.418      ;
+; 0.832 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.067      ;
 ; 0.833 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 1.054      ;
-; 0.833 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.068      ;
-; 0.833 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.068      ;
-; 0.835 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.070      ;
+; 0.834 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.069      ;
+; 0.836 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.071      ;
 ; 0.843 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 1.064      ;
 ; 0.857 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 1.078      ;
 ; 0.859 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[1] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 1.080      ;
 ; 0.859 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 1.080      ;
 ; 0.861 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 1.082      ;
 ; 0.922 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.510      ;
-; 0.926 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.161      ;
-; 0.928 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.163      ;
-; 0.930 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.165      ;
+; 0.927 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.162      ;
+; 0.929 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.164      ;
+; 0.931 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.166      ;
 ; 0.940 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.431      ; 1.528      ;
-; 0.945 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.180      ;
+; 0.946 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.181      ;
 ; 0.953 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 1.174      ;
 ; 0.955 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 1.176      ;
 ; 0.971 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 1.192      ;
 ; 0.973 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.064      ; 1.194      ;
-; 1.040 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.275      ;
+; 1.041 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.078      ; 1.276      ;
 +-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -328,7 +328,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; Clk   ; 0.418 ; 0.000             ;
+; Clk   ; 0.419 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -363,23 +363,23 @@ No paths to report.
 ; -0.498 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.423      ;
 ; -0.439 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 1.378      ;
 ; -0.416 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.341      ;
-; -0.413 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.338      ;
-; -0.413 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.338      ;
+; -0.412 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.337      ;
 ; -0.410 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 1.349      ;
+; -0.410 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.335      ;
 ; -0.407 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 1.346      ;
 ; -0.402 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 1.341      ;
 ; -0.398 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.323      ;
-; -0.395 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.320      ;
-; -0.389 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 1.328      ;
+; -0.392 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.317      ;
 ; -0.389 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.649      ;
+; -0.389 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 1.328      ;
 ; -0.386 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.646      ;
 ; -0.368 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.628      ;
-; -0.346 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.271      ;
+; -0.348 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.273      ;
 ; -0.345 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 1.284      ;
 ; -0.339 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 1.278      ;
 ; -0.318 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.578      ;
-; -0.313 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.238      ;
-; -0.311 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.236      ;
+; -0.312 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.237      ;
+; -0.312 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 1.237      ;
 ; -0.310 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[1] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 1.249      ;
 ; -0.307 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 1.246      ;
 ; -0.289 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.549      ;
@@ -393,24 +393,24 @@ No paths to report.
 ; -0.189 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.449      ;
 ; -0.186 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.446      ;
 ; -0.181 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.441      ;
-; -0.177 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.437      ;
+; -0.178 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.438      ;
 ; -0.168 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.428      ;
 ; -0.163 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.423      ;
 ; -0.124 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.384      ;
-; -0.111 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.371      ;
+; -0.110 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.370      ;
 ; -0.086 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.346      ;
-; -0.077 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.337      ;
+; -0.078 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.338      ;
 ; -0.063 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.323      ;
-; -0.011 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.271      ;
-; 0.023  ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.237      ;
-; 0.039  ; InstFetch:IF1|ProgCtr[9] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 0.886      ;
-; 0.042  ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 0.883      ;
-; 0.043  ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 0.882      ;
+; -0.010 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.270      ;
+; 0.022  ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.265      ; 1.238      ;
+; 0.037  ; InstFetch:IF1|ProgCtr[9] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 0.888      ;
+; 0.040  ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 0.885      ;
 ; 0.043  ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 0.896      ;
+; 0.045  ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 0.880      ;
 ; 0.049  ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[0] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 0.890      ;
 ; 0.052  ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 0.873      ;
-; 0.053  ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 0.872      ;
-; 0.056  ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 0.883      ;
+; 0.056  ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.070     ; 0.869      ;
+; 0.057  ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 0.882      ;
 ; 0.059  ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[1] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 0.880      ;
 ; 0.066  ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.056     ; 0.873      ;
 +--------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
@@ -421,28 +421,28 @@ No paths to report.
 +-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                ; To Node                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
-; 0.418 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 0.953      ;
-; 0.425 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 0.960      ;
+; 0.419 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 0.954      ;
+; 0.426 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 0.961      ;
+; 0.485 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.699      ;
 ; 0.486 ; InstFetch:IF1|ProgCtr[9] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.700      ;
-; 0.486 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.700      ;
-; 0.489 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.703      ;
-; 0.489 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.703      ;
-; 0.491 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.705      ;
+; 0.488 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.702      ;
+; 0.490 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.704      ;
+; 0.490 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.704      ;
 ; 0.501 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.036      ;
 ; 0.502 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 0.702      ;
-; 0.504 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 0.704      ;
+; 0.505 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 0.705      ;
 ; 0.508 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.043      ;
 ; 0.511 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[1] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 0.711      ;
 ; 0.512 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 0.712      ;
-; 0.514 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.049      ;
-; 0.521 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.056      ;
+; 0.515 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.050      ;
+; 0.522 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.057      ;
 ; 0.522 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.057      ;
 ; 0.529 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.064      ;
 ; 0.531 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[0] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 0.731      ;
 ; 0.597 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.132      ;
 ; 0.604 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.139      ;
 ; 0.605 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.140      ;
-; 0.610 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.145      ;
+; 0.611 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.146      ;
 ; 0.612 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.147      ;
 ; 0.618 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.153      ;
 ; 0.621 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.156      ;
@@ -454,12 +454,12 @@ No paths to report.
 ; 0.714 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.249      ;
 ; 0.717 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.252      ;
 ; 0.724 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.259      ;
-; 0.730 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.944      ;
-; 0.734 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.948      ;
-; 0.738 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.952      ;
-; 0.740 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.954      ;
+; 0.729 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.943      ;
+; 0.733 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.947      ;
+; 0.739 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.953      ;
+; 0.739 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.953      ;
+; 0.746 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.960      ;
 ; 0.747 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 0.947      ;
-; 0.747 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 0.961      ;
 ; 0.755 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 0.955      ;
 ; 0.761 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 0.961      ;
 ; 0.764 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[1] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 0.964      ;
@@ -467,15 +467,15 @@ No paths to report.
 ; 0.771 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 0.971      ;
 ; 0.797 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.332      ;
 ; 0.813 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.391      ; 1.348      ;
-; 0.819 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 1.033      ;
-; 0.823 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 1.037      ;
-; 0.830 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 1.044      ;
-; 0.836 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 1.050      ;
+; 0.818 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 1.032      ;
+; 0.822 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 1.036      ;
+; 0.829 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 1.043      ;
+; 0.835 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 1.049      ;
 ; 0.844 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 1.044      ;
 ; 0.851 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 1.051      ;
 ; 0.860 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 1.060      ;
 ; 0.867 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.056      ; 1.067      ;
-; 0.919 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 1.133      ;
+; 0.918 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.070      ; 1.132      ;
 +-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -490,7 +490,7 @@ No synchronizer chains to report.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; Clk   ; 0.041 ; 0.000              ;
+; Clk   ; 0.040 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -529,24 +529,24 @@ No paths to report.
 +-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                ; To Node                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
-; 0.041 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.902      ;
-; 0.045 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.898      ;
+; 0.040 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.903      ;
+; 0.044 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.899      ;
 ; 0.050 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.900      ;
 ; 0.094 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.856      ;
 ; 0.104 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 1.040      ;
+; 0.108 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.835      ;
 ; 0.108 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 1.036      ;
-; 0.109 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.834      ;
-; 0.112 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.831      ;
-; 0.113 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.830      ;
+; 0.112 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.831      ;
+; 0.113 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.830      ;
 ; 0.114 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.836      ;
 ; 0.114 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 1.030      ;
-; 0.116 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.827      ;
+; 0.117 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.826      ;
 ; 0.118 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.832      ;
 ; 0.119 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.831      ;
+; 0.123 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.820      ;
 ; 0.124 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.826      ;
-; 0.124 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.819      ;
 ; 0.152 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.992      ;
-; 0.161 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.782      ;
+; 0.160 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.783      ;
 ; 0.162 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.788      ;
 ; 0.163 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.787      ;
 ; 0.172 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.972      ;
@@ -555,10 +555,10 @@ No paths to report.
 ; 0.177 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.967      ;
 ; 0.182 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.962      ;
 ; 0.182 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.962      ;
-; 0.191 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.752      ;
+; 0.191 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.752      ;
 ; 0.192 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[1] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.758      ;
 ; 0.192 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.758      ;
-; 0.192 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.751      ;
+; 0.193 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.750      ;
 ; 0.220 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.924      ;
 ; 0.221 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.923      ;
 ; 0.240 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.904      ;
@@ -566,22 +566,22 @@ No paths to report.
 ; 0.245 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.899      ;
 ; 0.250 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.894      ;
 ; 0.250 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.894      ;
-; 0.257 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.887      ;
+; 0.258 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.886      ;
 ; 0.289 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.855      ;
-; 0.293 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.851      ;
+; 0.294 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.850      ;
 ; 0.309 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.835      ;
 ; 0.318 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.826      ;
-; 0.325 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.819      ;
-; 0.361 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.783      ;
-; 0.393 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.751      ;
+; 0.326 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.818      ;
+; 0.362 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.782      ;
+; 0.394 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; 0.157      ; 0.750      ;
 ; 0.395 ; InstFetch:IF1|ProgCtr[9] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.548      ;
-; 0.396 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.547      ;
-; 0.397 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.546      ;
+; 0.396 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.547      ;
 ; 0.398 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[0] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.552      ;
+; 0.398 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.545      ;
 ; 0.398 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.552      ;
-; 0.403 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.547      ;
-; 0.406 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.537      ;
-; 0.408 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.535      ;
+; 0.404 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.546      ;
+; 0.405 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.538      ;
+; 0.409 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 1.000        ; -0.044     ; 0.534      ;
 ; 0.410 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[1] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.540      ;
 ; 0.412 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 1.000        ; -0.037     ; 0.538      ;
 +-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
@@ -594,10 +594,10 @@ No paths to report.
 +-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
 ; 0.256 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.578      ;
 ; 0.259 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.581      ;
-; 0.291 ; InstFetch:IF1|ProgCtr[9] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.419      ;
-; 0.291 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.419      ;
-; 0.291 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.419      ;
-; 0.293 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.421      ;
+; 0.290 ; InstFetch:IF1|ProgCtr[9] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.418      ;
+; 0.290 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.418      ;
+; 0.292 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.420      ;
+; 0.292 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.420      ;
 ; 0.293 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.421      ;
 ; 0.298 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.419      ;
 ; 0.299 ; InstFetch:IF1|ProgCtr[4] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.420      ;
@@ -619,14 +619,14 @@ No paths to report.
 ; 0.395 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[5] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.717      ;
 ; 0.397 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.719      ;
 ; 0.398 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.720      ;
-; 0.440 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.568      ;
-; 0.440 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.568      ;
+; 0.439 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.567      ;
+; 0.441 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[6] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.569      ;
 ; 0.441 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.763      ;
 ; 0.447 ; InstFetch:IF1|ProgCtr[3] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.568      ;
 ; 0.447 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.769      ;
+; 0.450 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.578      ;
 ; 0.450 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.772      ;
 ; 0.451 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.579      ;
-; 0.451 ; InstFetch:IF1|ProgCtr[8] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.579      ;
 ; 0.453 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.574      ;
 ; 0.454 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.582      ;
 ; 0.460 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.782      ;
@@ -636,9 +636,9 @@ No paths to report.
 ; 0.464 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.786      ;
 ; 0.466 ; InstFetch:IF1|ProgCtr[2] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.587      ;
 ; 0.467 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[2] ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.588      ;
-; 0.503 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.631      ;
-; 0.503 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.631      ;
-; 0.506 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.634      ;
+; 0.502 ; InstFetch:IF1|ProgCtr[7] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.630      ;
+; 0.504 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[7] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.632      ;
+; 0.507 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[8] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.635      ;
 ; 0.513 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.835      ;
 ; 0.516 ; InstFetch:IF1|ProgCtr[1] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.637      ;
 ; 0.517 ; InstFetch:IF1|ProgCtr[6] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.645      ;
@@ -646,7 +646,7 @@ No paths to report.
 ; 0.527 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.238      ; 0.849      ;
 ; 0.530 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[3] ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.651      ;
 ; 0.533 ; InstFetch:IF1|ProgCtr[0] ; InstFetch:IF1|ProgCtr[4] ; Clk          ; Clk         ; 0.000        ; 0.037      ; 0.654      ;
-; 0.569 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.697      ;
+; 0.570 ; InstFetch:IF1|ProgCtr[5] ; InstFetch:IF1|ProgCtr[9] ; Clk          ; Clk         ; 0.000        ; 0.044      ; 0.698      ;
 +-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -825,7 +825,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Mar 03 18:08:20 2021
+    Info: Processing started: Thu Mar 04 16:22:13 2021
 Info: Command: quartus_sta TopLevel -c TopLevel
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -846,10 +846,10 @@ Info (332146): Worst-case setup slack is -0.710
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -0.710              -5.362 Clk 
-Info (332146): Worst-case hold slack is 0.481
+Info (332146): Worst-case hold slack is 0.480
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.481               0.000 Clk 
+    Info (332119):     0.480               0.000 Clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -866,10 +866,10 @@ Info (332146): Worst-case setup slack is -0.516
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -0.516              -3.651 Clk 
-Info (332146): Worst-case hold slack is 0.418
+Info (332146): Worst-case hold slack is 0.419
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.418               0.000 Clk 
+    Info (332119):     0.419               0.000 Clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -878,10 +878,10 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):    -3.000             -13.000 Clk 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 0.041
+Info (332146): Worst-case setup slack is 0.040
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.041               0.000 Clk 
+    Info (332119):     0.040               0.000 Clk 
 Info (332146): Worst-case hold slack is 0.256
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -898,8 +898,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4873 megabytes
-    Info: Processing ended: Wed Mar 03 18:08:21 2021
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Thu Mar 04 16:22:15 2021
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

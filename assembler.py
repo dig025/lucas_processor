@@ -123,6 +123,7 @@ with open(filename, 'r') as f:
     print(machine_code)
     w_file.write(machine_code + '\n' )
 
+  w_file.write("000000000")
   w_file.close()
    
 

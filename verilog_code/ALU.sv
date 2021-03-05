@@ -9,7 +9,8 @@ import definitions::*;			         // includes package "definitions"
 module ALU(
   input        [7:0] InputA,             // data inputs
                      InputB,
-  input        [2:0] Function,		         // ALU opcode, part of microcode
+  input        [2:0] Function,		   // ALU opcode that comes from RType instructions since 
+													// only RType instructions access the ALU
   output logic [7:0] Out,		         // or:  output reg [7:0] OUT,
   output logic       takeBranch        // output = 1 when beq is true 0 when false
     );								    

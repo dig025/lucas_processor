@@ -14,16 +14,11 @@ package definitions;
 	 const logic [1:0] kGROP  = 2'b01; // load/store 
 	 const logic [1:0] kFIG	= 2'b10;	  // fig
 	 const logic [1:0] kRTYPE = 2'b00;
-	 const logic [1:0] kRLSTYPE = 2'b01;
+	 const logic [1:0] kLSTYPE = 2'b01;
 	 const logic [1:0] kLB = 2'b00;
 	 const logic [1:0] kSB = 2'b01;
 	 const logic [1:0] kFGO = 2'b11;
-	 //const logic [2:0]kLSH  = 3'b001;
-    //const logic [2:0]kRSH  = 3'b010;
-    //const logic [2:0]kXOR  = 3'b011;
-    //const logic [2:0]kAND  = 3'b100;
-	//const logic [2:0]kSUB  = 3'b101;
-	//const logic [2:0]kCLR  = 3'b110;
+
 // enum names will appear in timing diagram
     typedef enum logic[2:0] {
         ADD, OR, XOR, AND,

@@ -1,5 +1,5 @@
 Fitter report for TopLevel
-Wed Mar 03 18:08:17 2021
+Thu Mar 04 16:21:59 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Mar 03 18:08:17 2021       ;
+; Fitter Status                      ; Successful - Thu Mar 04 16:21:59 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; TopLevel                                    ;
 ; Top-level Entity Name              ; TopLevel                                    ;
@@ -581,19 +581,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------+-------------------+---------+
 ; Clk                                ;                   ;         ;
 ; Reset                              ;                   ;         ;
+;      - InstFetch:IF1|ProgCtr[4]    ; 1                 ; 6       ;
+;      - InstFetch:IF1|ProgCtr[1]    ; 1                 ; 6       ;
 ;      - InstFetch:IF1|ProgCtr[2]    ; 1                 ; 6       ;
 ;      - InstFetch:IF1|ProgCtr[3]    ; 1                 ; 6       ;
-;      - InstFetch:IF1|ProgCtr[4]    ; 1                 ; 6       ;
-;      - InstFetch:IF1|ProgCtr[5]    ; 1                 ; 6       ;
-;      - InstFetch:IF1|ProgCtr[1]    ; 1                 ; 6       ;
 ;      - InstFetch:IF1|ProgCtr[0]    ; 1                 ; 6       ;
+;      - InstFetch:IF1|ProgCtr[5]    ; 1                 ; 6       ;
 ;      - InstFetch:IF1|ProgCtr[6]    ; 1                 ; 6       ;
 ;      - InstFetch:IF1|ProgCtr[7]    ; 1                 ; 6       ;
 ;      - InstFetch:IF1|ProgCtr[8]    ; 1                 ; 6       ;
 ;      - InstFetch:IF1|ProgCtr[9]    ; 1                 ; 6       ;
-;      - InstFetch:IF1|ProgCtr[0]~14 ; 0                 ; 6       ;
+;      - InstFetch:IF1|ProgCtr[0]~20 ; 0                 ; 6       ;
 ; Start                              ;                   ;         ;
-;      - InstFetch:IF1|ProgCtr[0]~14 ; 0                 ; 6       ;
+;      - InstFetch:IF1|ProgCtr[0]~20 ; 0                 ; 6       ;
 +------------------------------------+-------------------+---------+
 
 
@@ -603,7 +603,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                        ; Location        ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------+-----------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Clk                         ; PIN_23          ; 10      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; InstFetch:IF1|ProgCtr[0]~14 ; LCCOMB_X1_Y6_N6 ; 10      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; InstFetch:IF1|ProgCtr[0]~20 ; LCCOMB_X1_Y6_N6 ; 10      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; Reset                       ; PIN_32          ; 11      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
 +-----------------------------+-----------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
@@ -892,8 +892,8 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file C:/Users/Daniel/Desktop/School/Winter 2021/CSE141L/lucas_processor/verilog_code/output_files/TopLevel.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6086 megabytes
-    Info: Processing ended: Wed Mar 03 18:08:18 2021
+    Info: Peak virtual memory: 6084 megabytes
+    Info: Processing ended: Thu Mar 04 16:22:00 2021
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:05
 

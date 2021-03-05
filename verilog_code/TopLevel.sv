@@ -15,18 +15,17 @@ wire [ 9:0] PgmCtr,        // program counter
 wire [ 8:0] Instruction;   // our 9-bit opcode
 wire [ 7:0] operator1, operator2, sourceReg;  // reg_file outputs
 wire [7:0]  ReadA, ReadB, ReadC;
-wire [ 7:0] InA, InB,  // ALU operand inputs
-            ALU_out;       // ALU result
+wire [ 7:0] InA, InB;  // ALU operand inputs
+          
 wire [ 7:0] RegWriteValue, // data in to reg file
             MemWriteValue, // data in to data_memory
+				ALU_Out,       // output from ALU
 	   	    MemReadValue;  // data out from data_memory
-wire        MemWrite,	   // data_memory write enable
-			RegWrEn,	   // reg_file write enable
+wire        MemWriteEn,	   // data_memory write enable
 			takeBranch,		   // ALU output = 0 flag
             Jump,	       // to program counter: jump 
             BranchEn,	   // to program counter: branch enable
-				GenRegEn;		// to reg file: decides whether to write to
-									// operational register or a general register
+				RegWriteEn;			// Whether we are writing to register or not
 logic[15:0] CycleCt;	   // standalone; NOT PC!
 
 // Fetch = Program Counter + Instruction ROM
@@ -36,7 +35,7 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
 	.Start       (Start   ) ,  // SystemVerilg shorthand for .halt(halt), 
 	.Clk         (Clk     ) ,  // (Clk) is required in Verilog, optional in SystemVerilog
 	.BranchRelEn (BranchEn) ,  // branch enable
-	.ALU_flag	 (takeBranch    ) ,
+	.ALU_flag	 (takeBranch),
     .Target      (PCTarg  ) ,
 	.ProgCtr     (PgmCtr  )	   // program count = index to instruction memory
 	);					  
@@ -45,7 +44,8 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
   Ctrl Ctrl1 (
 	.Instruction  (Instruction), // from instr_ROM
 	.BranchEn     (BranchEn),		 // to PC
-	.GenRegEn	  (GenRegEn)
+	.RegWriteEn   (RegWriteEn),
+	.MemWriteEn   (MemWriteEn),
   );
 // instruction ROM
   InstROM #(.W(9)) IR1(
@@ -54,11 +54,12 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
 	);
 
   assign LoadInst = Instruction[7:6]==3'b01;  // calls out load specially
-  assign Ack = &Instruction;
+  assign Ack = Instruction == 9'b0;
+  
 // reg file
 	RegFile #(.W(8),.D(3)) RF1 (
 		.Clk    				  ,
-		.WriteEn   (RegWrEn)    , 
+		.RegWriteEn   (RegWriteEn)    , 
 		.OpReg	 (Instruction[4]),
 		.Function (Instruction[6:5]),
 		.Regaddr    (Instruction[3:0]),         
@@ -68,26 +69,35 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
 		.DataOutB  (ReadB),
 		.DataOutC  (ReadC)
 	);
+	
+// Mux to decide whether we use the value from ALU as RegWriteValue
+// or the value from DataMem
+	assign RegWriteValue = (Instruction[7:6] == kLSTYPE && Instruction[5:4] == kLB) ? MemReadValue : ALU_Out;
+	
+// Mux to decide which operation register is being written to memory
+// ReadA and ReadB are always the operation registers
+	assign MemWriteValue = Instruction[4] == 1'b0 ? ReadA : ReadB;
+	
+	
 // one pointer, two adjacent read accesses: (optional approach)
 //	.raddrA ({Instruction[5:3],1'b0});
 //	.raddrB ({Instruction[5:3],1'b1});
 
-    assign InA = ReadA;						          // connect RF out to ALU in
+   assign InA = ReadA;						          // connect RF out to ALU in
 	assign InB = ReadB;
 	assign PCTarg = ReadC;
-	assign MemWrite = (Instruction == 9'h111);       // mem_store command
-	assign RegWriteValue = LoadInst? MemReadValue : ALU_out;  // 2:1 switch into reg_file
+	
     ALU ALU1  (
 	  .InputA  (InA),
 	  .InputB  (InB),
 	  .Function(Instruction[6:4]),
-	  .Out     (ALU_out),//regWriteValue),
+	  .Out     (ALU_Out),//regWriteValue),
 	  .takeBranch
 	  );
   
 	DataMem DM1(
 		.DataAddress  (ReadA)    , 
-		.WriteEn      (MemWrite), 
+		.MemWriteEn   (MemWriteEn), 
 		.DataIn       (MemWriteValue), 
 		.DataOut      (MemReadValue)  , 
 		.Clk 		  		     ,

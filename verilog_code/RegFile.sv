@@ -10,7 +10,7 @@
 import definitions::*;			         // includes package "definitions"
 module RegFile #(parameter W=8, D=4)(		  // W = data path width; D = pointer width
   input                Clk,
-                       WriteEn,
+                       RegWriteEn,
   input        [D-1:0] Regaddr,				  // address pointers
   input			[7:0]   Imm,
   input logic      	  OpReg,
@@ -37,12 +37,12 @@ assign DataOutC = Registers[Regaddr];
 
 // sequential (clocked) writes 
 always_ff @ (posedge Clk)
-  if (WriteEn) begin	             // works just like data_memory writes
+  if (RegWriteEn) begin	             // works just like data_memory writes
     if (OpCode[1] == 1'b1)
 		Registers[0] <= Imm;
-	 else if (OpCode == kRLSTYPE && Function == kFIG)
+	 else if (OpCode == kLSTYPE && Function == kFIG)
 		Registers[Regaddr] = Registers[0];
-	 else if (OpCode == kRLSTYPE && Function == kFGO)
+	 else if (OpCode == kLSTYPE && Function == kFGO)
 		Registers[OpReg+2'b01] = Registers[Regaddr];
 	 else
 	   Registers[Regaddr] <= DataIn;
