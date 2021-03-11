@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define START 0x40      
-#define TAPS 0x60
+#define START 0x20      
+#define TAPS 0x48
 /* short program to understand linear feed shift register */
 int main()
 {
   //unsigned char original[] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'r', 'a', 'n', 'd', };
-  unsigned char original[] = "             random message                           "; 
+  unsigned char original[] = "                          Mr. Watson, come here. I want to see you."; 
   unsigned char len = 54;
   unsigned char taps, state, next, encrypted;
   unsigned char idx, bit, ones, parity;
@@ -52,6 +52,11 @@ int main()
   printf("\nEncrypted Message\n");
   for(int i = 0; i < len; i ++) {
       printf("0x%X,", original[i]);
+  }
+
+  printf("\nEncrypted Message String\n");
+  for(int i = 0; i < len; i ++) {
+      printf("%c", original[i]);
   }
 
 

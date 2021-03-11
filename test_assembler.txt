@@ -1,1 +1,5 @@
 is 10
+fig r1
+is 64
+fig r2
+sb r1 r2

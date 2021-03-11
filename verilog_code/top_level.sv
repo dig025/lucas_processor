@@ -27,6 +27,8 @@ wire        MemWriteEn,	   // data_memory write enable
             BranchEn,	   // to program counter: branch enable
 				RegWriteEn;			// Whether we are writing to register or not
 logic[15:0] CycleCt;	   // standalone; NOT PC!
+wire[7:0] test_reg[2**4];
+wire[7:0] test_core[256];
 
 // Fetch = Program Counter + Instruction ROM
 // Program Counter
@@ -67,7 +69,8 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
 		.DataIn    (RegWriteValue) ,
 		.DataOutA  (ReadA) , 
 		.DataOutB  (ReadB),
-		.DataOutC  (ReadC)
+		.DataOutC  (ReadC),
+		.test_reg (test_reg)
 	);
 	
 // Mux to decide whether we use the value from ALU as RegWriteValue
@@ -96,12 +99,13 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
 	  );
   
 	data_mem DM(
-		.DataAddress  (ReadA)    , 
+		.DataAddress  (ReadC)    , 
 		.MemWriteEn   (MemWriteEn), 
 		.DataIn       (MemWriteValue), 
 		.DataOut      (MemReadValue)  , 
 		.Clk 		  	  (clk)     ,
-		.Reset		  (init)
+		.Reset		  (init),
+		.core_out (test_core)
 	);
 	
 // count number of instructions executed
