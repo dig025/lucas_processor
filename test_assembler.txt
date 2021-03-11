@@ -1,8 +1,1 @@
-is 0x7F     #111111010
-fig r1      #011000001 note: fig does not use op reg so the bit in pos 4 defaults to 0
-is 7        #100000111
-fig r2      #011000010
-add r3      #000000011
-beq r10     #001011010
-lb r1 r12   #010001100
-sb r2 r10   #010111010
+is 10

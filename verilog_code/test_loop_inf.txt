@@ -1,0 +1,5 @@
+is 5
+fig r1
+fig r2
+is -3
+beq r0

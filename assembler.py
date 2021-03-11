@@ -3,7 +3,7 @@ import sys
 
 print('Assembling to machine code:')
 
-if(len(sys.argv) > 1):
+if(len(sys.argv) > 2):
   filename = sys.argv[1]
   file_exists = True
 else:
@@ -13,7 +13,7 @@ else:
 assembly_file = open(filename, 'r')
 
 #w_file is the file we are writing to
-w_file = open("machine_code.txt", "w")
+w_file = open(sys.argv[2] + "/machine_code.txt", "w")
 
 #Open a file name and read each line
 #to strip \n newline chars

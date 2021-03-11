@@ -6,8 +6,8 @@
 import definitions::*;			         // includes package "definitions"										   
 module top_level(		   // you will have the same 3 ports
     input        init,	   // init/reset, active high
-			     req,    // start next program
-	             clk,	   // clock -- posedge used inside design
+			        req,    // start next program
+	              clk,	   // clock -- posedge used inside design
     output logic ack	   // done flag from DUT
     );
 
@@ -24,7 +24,6 @@ wire [ 7:0] RegWriteValue, // data in to reg file
 	   	    MemReadValue;  // data out from data_memory
 wire        MemWriteEn,	   // data_memory write enable
 			takeBranch,		   // ALU output = 0 flag
-            Jump,	       // to program counter: jump 
             BranchEn,	   // to program counter: branch enable
 				RegWriteEn;			// Whether we are writing to register or not
 logic[15:0] CycleCt;	   // standalone; NOT PC!
@@ -32,13 +31,13 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
 // Fetch = Program Counter + Instruction ROM
 // Program Counter
   InstFetch IF1 (
-	.Reset       (init   ) , 
-	.Start       (req   ) ,  // SystemVerilg shorthand for .halt(halt), 
-	.Clk         (clk     ) ,  // (Clk) is required in Verilog, optional in SystemVerilog
-	.BranchRelEn (BranchEn) ,  // branch enable
-	.ALU_flag	 (takeBranch),
-    .Target      (PCTarg  ) ,
-	.ProgCtr     (PgmCtr  )	   // program count = index to instruction memory
+	.Reset       (init      ) , 
+	.Start       (req       ) ,  // SystemVerilg shorthand for .halt(halt), 
+	.Clk         (clk       ) ,  // (Clk) is required in Verilog, optional in SystemVerilog
+	.BranchRelEn (BranchEn  ) ,  // branch enable
+	.ALU_flag	 (takeBranch) ,
+    .Target     (PCTarg    ) ,
+	.ProgCtr     (PgmCtr    )	   // program count = index to instruction memory
 	);					  
 
 // Control decoder
@@ -57,10 +56,11 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
   assign ack = Instruction == 9'b0;
   
 // reg file
-	RegFile #(.W(8),.D(3)) RF1 (
+	RegFile #(.W(8),.D(4)) RF1 (
 		.Clk    			(clk)	  ,
 		.RegWriteEn   (RegWriteEn)    , 
 		.OpReg	 (Instruction[4]),
+		.OpCode   (Instruction[8:7]),
 		.Function (Instruction[6:5]),
 		.Regaddr    (Instruction[3:0]),         
 		.Imm       (Instruction[7:0]), 	       
@@ -72,7 +72,7 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
 	
 // Mux to decide whether we use the value from ALU as RegWriteValue
 // or the value from DataMem
-	assign RegWriteValue = (Instruction[7:6] == kLSTYPE && Instruction[5:4] == kLB) ? MemReadValue : ALU_Out;
+	assign RegWriteValue = (Instruction[8:7] == kLSTYPE && Instruction[6:5] == kLB) ? MemReadValue : ALU_Out;
 	
 // Mux to decide which operation register is being written to memory
 // ReadA and ReadB are always the operation registers
@@ -85,7 +85,7 @@ logic[15:0] CycleCt;	   // standalone; NOT PC!
 
    assign InA = ReadA;						          // connect RF out to ALU in
 	assign InB = ReadB;
-	assign PCTarg = ReadC;
+	assign PCTarg = $signed(ReadC);
 	
     ALU ALU1  (
 	  .InputA  (InA),

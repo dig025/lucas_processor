@@ -22,7 +22,7 @@ module InstFetch(
 	else if(Start)						// hold while start asserted; commence when released
 	  ProgCtr <= ProgCtr;
 	else if(BranchRelEn && ALU_flag)    // conditional relative jump
-	  ProgCtr <= Target + ProgCtr + 10'b1;
+	  ProgCtr <= $signed(Target) + $signed(ProgCtr) + $signed(10'b1);
 	else
 	  ProgCtr <= ProgCtr + 10'b1; 	        // default increment (no need for ARM/MIPS +4 -- why?)
 
