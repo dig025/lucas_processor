@@ -43,8 +43,10 @@ always_ff @ (posedge Clk)
 		Registers[0] <= Imm;
 	 else if (OpCode == kLSTYPE && Function == kFIG)
 		Registers[Regaddr] = Registers[0];
-	 else if (OpCode == kLSTYPE && (Function == kFGO || Function == kLB))
-		Registers[OpReg+2'b01] = Registers[Regaddr];
+	 else if (OpCode == kLSTYPE && Function == kFGO) 
+		Registers[OpReg+2'b01] = Registers[Regaddr];			
+	 else if (OpCode == kLSTYPE && Function == kLB)
+		Registers[OpReg+2'b01] = DataIn;							
 	 else
 	   Registers[Regaddr] <= DataIn;
   end

@@ -1,5 +1,8 @@
-is 10
-fig r1
 is 64
+fig r14
+is 0x20
+fig r1
 fig r2
-sb r1 r2
+xor r15
+fgo r15 r1
+sb r1 r14

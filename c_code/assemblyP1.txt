@@ -22,6 +22,8 @@
   add r7      // r7 = mem[r7] + 0
   is  64      
   fig r8      // r8 = 64 where to start writing instructions
+  is 0x7F
+  fig r12
 
   // space char preamble to mem
   // checking if num spaces is less than 10
@@ -71,7 +73,7 @@
   fgo r10 r1    // r1 = r10 the result of comparison
   is  0         // r0 = 0
   fig r2        // r2 = 0 
-  is 13
+  is 12
   beq r0        // branch to else
   // if statement - code to encrypt spaces
   is  0x20      // space char
@@ -79,13 +81,12 @@
   fgo r7 r2     // r2 = state in r7
   xor r15       // r15 = xor 
   fgo r15 r1    // r1 = r15 (result of xor) aka: encrypted char
-  is  0x7F      // ignoring the MSB
-  fig r2        
+  fgo r12 r2        
   and r14       // r14 stores encrypted char with MSB = 0 
   is  1         
   fig r1
   fig r2
-  is  7
+  is  6
   beq r0        // skip to initial condition check for while(encrypted)
   
   // else statement - code to encrypt from mem
@@ -93,8 +94,7 @@
   fgo r7  r2    // state in r7
   xor r15       // encrypts before adding parity bit
   fgo r15  r1   // r1 = r15 (result of xor) aka:encrypted char
-  is  0x7F      
-  fig r2
+  fgo r12 r2
   and r14       // r14 stores encrypted char with MSB = 0
 
   // initial condition check for while(encrypted)
@@ -102,7 +102,7 @@
   fig r2        // r2 = 0
   fig r13       // r13 = 0 (parity bit initialization)
   fgo r14  r1   // r1 = encrypted
-  is  23        //(17 for how many instructions after pc+1)
+  is  24        //(17 for how many instructions after pc+1)
   beq r0        //to after while loop for encrypted
 
   // actual parity bit calculation
@@ -126,10 +126,11 @@
   fgo r14  r1   
   is  0
   fig r2        // r2 = 0
-  is  3 
+  is  4 
   beq r0        //to after while loop for encrypted because encrypted=0
+  is 0
   fig r1        // r1 = 0
-  is  -23
+  is  -24
   beq r0        //because 0=0, branch to beginning of while(encrypted)
   
   // left shifting parity bit by 7 to fit encrypt char
@@ -139,8 +140,7 @@
   sll r13       // r13 = r13 << 7
   // and masking encrypted message to make MSB = 0
   fgo r15  r1   // r1 = r15
-  is  0x7F
-  fig r2        // r2 = 0x7F
+  fgo r12 r2        // r2 = 0x7F
   and r15       // r15 = r15 & 0x7F
   // encrypted message with parity bit r15
   fgo r13  r1   // r1 = r13
@@ -159,17 +159,15 @@
   fgo r6  r2    // r2 = r6 (tap)
   and r14       // ones = state & taps (r14 = r6 & r7)
   fgo r7  r1    
-  is  1
   fig r2
   sll r7       // r7 = r7 << 1
-  is  0
   fig r13      // r13 = lsb for new state (bit)
   
   // initial condition check for while(ones)
   is  0
   fig r2        // r2 = 0
   fgo r14  r1   // r1 = ones
-  is  23
+  is  24
   beq r0        //to after while(ones)
   
   // start of while ones
@@ -194,8 +192,9 @@
   fig r2        // r2 = 0
   is  3   
   beq r0        //to after while loop for ones because ones=0
+  is 0
   fig r1        // r1 = 0
-  is  -23
+  is  -24
   beq r0        //because 0=0, branch to beginning of while(ones)
 
   // after while(ones) we set the bit for the new state
@@ -217,5 +216,5 @@
   slt r15       // r15 = 1 if r1 < r2, 0 otherwise
   fgo r15  r1   // r1 = r15
   fig r2        // r2 = 1
-  is  -122      // how many instructions
+  is  -126      // how many instructions
   beq r0
