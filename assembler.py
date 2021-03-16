@@ -13,7 +13,7 @@ else:
 assembly_file = open(filename, 'r')
 
 #w_file is the file we are writing to
-w_file = open(sys.argv[2] + "/machine_code.txt", "w")
+w_file = open(sys.argv[2], "w")
 
 #Open a file name and read each line
 #to strip \n newline chars
