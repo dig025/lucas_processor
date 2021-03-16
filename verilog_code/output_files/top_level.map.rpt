@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_level
-Sat Mar 13 21:21:09 2021
+Mon Mar 15 17:19:25 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -50,13 +50,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Mar 13 21:21:09 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 15 17:19:25 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; top_level                                   ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 4,244                                       ;
-;     Total combinational functions  ; 2,100                                       ;
+; Total logic elements               ; 4,272                                       ;
+;     Total combinational functions  ; 2,128                                       ;
 ;     Dedicated logic registers      ; 2,186                                       ;
 ; Total registers                    ; 2186                                        ;
 ; Total pins                         ; 4                                           ;
@@ -170,7 +170,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 4            ;   0.1%      ;
 ;     Processor 5            ;   0.1%      ;
 ;     Processor 6            ;   0.1%      ;
-;     Processor 7            ;   0.1%      ;
+;     Processor 7            ;   0.0%      ;
 ;     Processor 8            ;   0.0%      ;
 ;     Processors 9-12        ;   0.0%      ;
 +----------------------------+-------------+
@@ -198,16 +198,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 4,244     ;
+; Estimated Total logic elements              ; 4,272     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2100      ;
+; Total combinational functions               ; 2128      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1723      ;
-;     -- 3 input functions                    ; 345       ;
-;     -- <=2 input functions                  ; 32        ;
+;     -- 4 input functions                    ; 1747      ;
+;     -- 3 input functions                    ; 348       ;
+;     -- <=2 input functions                  ; 33        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2076      ;
+;     -- normal mode                          ; 2104      ;
 ;     -- arithmetic mode                      ; 24        ;
 ;                                             ;           ;
 ; Total registers                             ; 2186      ;
@@ -220,7 +220,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 2186      ;
-; Total fan-out                               ; 14580     ;
+; Total fan-out                               ; 14687     ;
 ; Average fan-out                             ; 3.40      ;
 +---------------------------------------------+-----------+
 
@@ -230,11 +230,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
-; |top_level                 ; 2100 (908)          ; 2186 (0)                  ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |top_level               ; top_level   ; work         ;
+; |top_level                 ; 2128 (907)          ; 2186 (0)                  ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |top_level               ; top_level   ; work         ;
 ;    |ALU:ALU1|              ; 58 (58)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ALU:ALU1      ; ALU         ; work         ;
 ;    |Ctrl:Ctrl1|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Ctrl:Ctrl1    ; Ctrl        ; work         ;
 ;    |InstFetch:IF1|         ; 20 (20)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|InstFetch:IF1 ; InstFetch   ; work         ;
-;    |InstROM:IR1|           ; 178 (178)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|InstROM:IR1   ; InstROM     ; work         ;
+;    |InstROM:IR1|           ; 207 (207)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|InstROM:IR1   ; InstROM     ; work         ;
 ;    |RegFile:RF1|           ; 144 (144)           ; 128 (128)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|RegFile:RF1   ; RegFile     ; work         ;
 ;    |data_mem:DM|           ; 790 (790)           ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|data_mem:DM   ; data_mem    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
@@ -329,16 +329,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 2168                        ;
 ;     ENA SCLR          ; 10                          ;
 ;     ENA SLD           ; 8                           ;
-; cycloneiii_lcell_comb ; 2100                        ;
+; cycloneiii_lcell_comb ; 2128                        ;
 ;     arith             ; 24                          ;
 ;         3 data inputs ; 24                          ;
-;     normal            ; 2076                        ;
-;         2 data inputs ; 32                          ;
-;         3 data inputs ; 321                         ;
-;         4 data inputs ; 1723                        ;
+;     normal            ; 2104                        ;
+;         2 data inputs ; 33                          ;
+;         3 data inputs ; 324                         ;
+;         4 data inputs ; 1747                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 21.00                       ;
-; Average LUT depth     ; 13.35                       ;
+; Average LUT depth     ; 13.36                       ;
 +-----------------------+-----------------------------+
 
 
@@ -357,7 +357,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Mar 13 21:20:52 2021
+    Info: Processing started: Mon Mar 15 17:19:09 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top_level -c top_level
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -387,7 +387,7 @@ Warning (10036): Verilog HDL or VHDL warning at top_level.sv(31): object "test_c
 Info (12128): Elaborating entity "InstFetch" for hierarchy "InstFetch:IF1" File: C:/Users/Diego/Desktop/lucas_processor/verilog_code/top_level.sv Line: 43
 Info (12128): Elaborating entity "Ctrl" for hierarchy "Ctrl:Ctrl1" File: C:/Users/Diego/Desktop/lucas_processor/verilog_code/top_level.sv Line: 51
 Info (12128): Elaborating entity "InstROM" for hierarchy "InstROM:IR1" File: C:/Users/Diego/Desktop/lucas_processor/verilog_code/top_level.sv Line: 56
-Warning (10850): Verilog HDL warning at InstROM.sv(21): number of words (172) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/Diego/Desktop/lucas_processor/verilog_code/InstROM.sv Line: 21
+Warning (10850): Verilog HDL warning at InstROM.sv(21): number of words (200) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/Diego/Desktop/lucas_processor/verilog_code/InstROM.sv Line: 21
 Warning (10030): Net "inst_rom.data_a" at InstROM.sv(17) has no driver or initial value, using a default initial value '0' File: C:/Users/Diego/Desktop/lucas_processor/verilog_code/InstROM.sv Line: 17
 Warning (10030): Net "inst_rom.waddr_a" at InstROM.sv(17) has no driver or initial value, using a default initial value '0' File: C:/Users/Diego/Desktop/lucas_processor/verilog_code/InstROM.sv Line: 17
 Warning (10030): Net "inst_rom.we_a" at InstROM.sv(17) has no driver or initial value, using a default initial value '0' File: C:/Users/Diego/Desktop/lucas_processor/verilog_code/InstROM.sv Line: 17
@@ -402,14 +402,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/Diego/Desktop/lucas_processor/verilog_code/output_files/top_level.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4280 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4308 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 4276 logic cells
+    Info (21061): Implemented 4304 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Sat Mar 13 21:21:09 2021
-    Info: Elapsed time: 00:00:17
+    Info: Peak virtual memory: 4840 megabytes
+    Info: Processing ended: Mon Mar 15 17:19:25 2021
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:24
 
 

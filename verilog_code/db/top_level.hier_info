@@ -2,7 +2,7 @@
 init => init.IN1
 req => req.IN1
 clk => clk.IN1
-ack << Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ack <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_level|InstFetch:IF1

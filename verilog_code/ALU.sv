@@ -20,7 +20,7 @@ module ALU(
   always_comb begin
     Out = 0;                             // No Op = default
     case(Function)
-      kADD : Out = InputA + InputB;      // add 
+      kADD : Out = $signed(InputA) + $signed(InputB);      // add 
 		kOR  : Out = InputA | InputB;
 		kXOR : Out = InputA ^ InputB;
 		kAND : Out = InputA & InputB;

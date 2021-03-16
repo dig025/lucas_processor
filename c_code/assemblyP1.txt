@@ -8,12 +8,86 @@
   fig r4      //r4 = 64 max loop itr
   is  61
   fig r5      //r5 = 61 mem loc of number of spaces/preamble
+
   is  62      
-  fig r6      // r6 = 62 mem loc of tap sequence
+  fig r6      // r6 = 62 mem loc of tap sequence index
+  lb  r1 r6   // r2 = mem[r6]
+  
+  is 9
+  fig r2
+  slt r2    //r2 = r1 < r2 ? 1 : 0
+  is 1
+  fig r1
+  is 9 
+  beq r0
   lb  r2 r6   // r2 = mem[r6]
-  is  0
-  fig r1      // r1 = 0
-  add r6      // r6 = r2 + r1
+  is 0x07
+  fig r1
+  and r6
+  is 1
+  fig r1
+  fig r2
+  is 3
+  beq r0
+  //else
+  is 0x0F
+  fig r1
+  and r6
+
+  fgo r6 r1
+
+  is  0x60 //0
+  fig r6
+  is 0
+  fig r2
+  is 44
+  beq r0
+  is  0x48  //1
+  fig r6
+  is 1
+  fig r2
+  is 38
+  beq r0
+  is  0x78  //2
+  fig r6
+  is 2
+  fig r2
+  is 32
+  beq r0
+  is  0x72  //3
+  fig r6
+  is 3
+  fig r2
+  is 26
+  beq r0
+  is  0x6A  //4
+  fig r6
+  is 4
+  fig r2
+  is 20
+  beq r0
+  is  0x69  //5
+  fig r6
+  is 5
+  fig r2
+  is 14
+  beq r0
+  is  0x5C  //6
+  fig r6
+  is 6
+  fig r2
+  is 8
+  beq r0
+  is  0x7E  //7
+  fig r6
+  is 7
+  fig r2
+  is 2
+  beq r0
+  is  0x7B  //8
+  fig r6
+
+
   is  63
   fig r7      // r7 = 63 mem loc of start state for lfsr
   lb  r2 r7    // r2 = mem[r7]
@@ -66,7 +140,10 @@
   fig r2        // r2 = 0 
   add r5        // r5 = r1 (number of spaces in mem location)
 
-  // encryption logic AT THIS POINT R5 CONTAINS NUM_SPACES
+  // encryption logic AT THIS POINT R5 CONTAINS NUM_SPACES      START of main WHILE
+  is 1          // continue = true where reg 9 is continue
+  fig r9
+
   fgo r3 r1     // loop counter (r3) inside r1
   fgo r5 r2     // num_spaces (r5) inside r2
   slt r10       // r10 = 1 if r1 < r2, otherwise r10 = 0
@@ -86,11 +163,20 @@
   is  1         
   fig r1
   fig r2
-  is  6
+  is  15
   beq r0        // skip to initial condition check for while(encrypted)
   
   // else statement - code to encrypt from mem
-  lb  r1  r3    // read char from  R[r1] = mem[r3]
+  fgo r5 r1
+  is 0xFF
+  fig r2
+  xor r2
+  is 1
+  fig r1
+  add r2
+  fgo r3 r1
+  add r1
+  lb  r1  r1    // read char from  R[r1] = mem[r3 - num spaces]
   fgo r7  r2    // state in r7
   xor r15       // encrypts before adding parity bit
   fgo r15  r1   // r1 = r15 (result of xor) aka:encrypted char
@@ -154,13 +240,30 @@
   fig r2        // r2 = 1
   add r8        // r8 = r8 + 1
 
+  //checking if we should continue or branch to start of main while loop
+  is 1
+  fig r1        //r1 = 1 for checking continue bool
+  fgo r9 r2     //r2 = continue aka r9
+  is 5          //go past the else logic
+  beq r0
+  is 1        //*
+  fig r1      //*
+  fig r2      //seting beq to true by default
+  is -93      //back to start 
+  beq r0
+
+  is 0        //*
+  fig r9      //continue is now false as we have already passed reset checkpoint
+
   // creating next state for while(ones)
   fgo r7  r1    // r1 = r7 (state)
   fgo r6  r2    // r2 = r6 (tap)
   and r14       // ones = state & taps (r14 = r6 & r7)
   fgo r7  r1    
+  is 1          //shift left by 1
   fig r2
   sll r7       // r7 = r7 << 1
+  is 0
   fig r13      // r13 = lsb for new state (bit)
   
   // initial condition check for while(ones)
@@ -190,7 +293,7 @@
   fgo r14  r1   
   is  0
   fig r2        // r2 = 0
-  is  3   
+  is  4   
   beq r0        //to after while loop for ones because ones=0
   is 0
   fig r1        // r1 = 0
@@ -199,7 +302,7 @@
 
   // after while(ones) we set the bit for the new state
   fgo r7  r1    // r1 = r7 (state)
-  is  0x7E
+  is  0x7E          
   fig r2
   and r7        // r7 = state & 0x7E
   fgo r7  r1    
@@ -216,5 +319,5 @@
   slt r15       // r15 = 1 if r1 < r2, 0 otherwise
   fgo r15  r1   // r1 = r15
   fig r2        // r2 = 1
-  is  -126      // how many instructions
+  is  -68     // how many instructions
   beq r0

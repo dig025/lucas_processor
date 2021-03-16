@@ -62,7 +62,7 @@ int main()
       ones = ones & (ones - 1);
     }
 
-    next = next & 0x7E | bit; //set the lsb to bit
+    next = next & 0x7E | bit; //set the lsb to bit and remove msb
     /** NOTE: NOT SURE WHY LINE UNDER THIS ONE IS COMMENTED PLEASE CHECK LOGIC IS STILL RIGHT **/
     //next = next & 0x7E| (parity << 7); //set the msb to bit to parity (because 7bit)
     state = next;             //update the current state to be next state

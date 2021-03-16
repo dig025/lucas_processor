@@ -72,67 +72,67 @@ encrypted string =
 
 program 1:
           0 bench msg:   00 dut msg: 00
-          1 bench msg: Ä 60 dut msg: e1  OOPS!
-          2 bench msg: A 21 dut msg: a0  OOPS!
-          3 bench msg: B 22 dut msg: 21  OOPS!
-          4 bench msg: D 24 dut msg: a0  OOPS!
-          5 bench msg: H 28 dut msg: 21  OOPS!
-          6 bench msg: Q b1 dut msg: a0  OOPS!
-          7 bench msg: " 82 dut msg: 21  OOPS!
-          8 bench msg: Ñ e4 dut msg: a0  OOPS!
-          9 bench msg: I a9 dut msg: 21  OOPS!
-         10 bench msg: S 33 dut msg: a0  OOPS!
-         11 bench msg: & 06 dut msg: 21  OOPS!
-         12 bench msg: å 6c dut msg: a0  OOPS!
-         13 bench msg: X b8 dut msg: 21  OOPS!
-         14 bench msg: 1 11 dut msg: a0  OOPS!
-         15 bench msg: b 42 dut msg: 21  OOPS!
-         16 bench msg: Ö 65 dut msg: a0  OOPS!
-         17 bench msg: K 2b dut msg: 21  OOPS!
-         18 bench msg: W b7 dut msg: a0  OOPS!
-         19 bench msg: . 8e dut msg: 21  OOPS!
-         20 bench msg: ù 7d dut msg: a0  OOPS!
-         21 bench msg: : 9a dut msg: 21  OOPS!
-         22 bench msg: u 55 dut msg: a0  OOPS!
-         23 bench msg: k 4b dut msg: 21  OOPS!
-         24 bench msg: ñ f6 dut msg: a0  OOPS!
-         25 bench msg: - 8d dut msg: 21  OOPS!
-         26 bench msg: 6 96 dut msg: e1  OOPS!
-         27 bench msg: d 44 dut msg: 6f  OOPS!
-         28 bench msg: b 42 dut msg: 74  OOPS!
-         29 bench msg: ò 78 dut msg: 21  OOPS!
-         30 bench msg: á e7 dut msg: 74  OOPS!
-         31 bench msg: ! 81 dut msg: ee  OOPS!
-         32 bench msg: U 35 dut msg: a0  OOPS!
-         33 bench msg: ê f0 dut msg: 72  OOPS!
-         34 bench msg: â 69 dut msg: 65  OOPS!
-         35 bench msg: Ç e2 dut msg: e4  OOPS!
-         36 bench msg: U 35 dut msg: a0  OOPS!
-         37 bench msg: 3 93 dut msg: 78  OOPS!
-         38 bench msg: % 05 dut msg: 6f  OOPS!
-         39 bench msg: B 22 dut msg: 74  OOPS!
-         40 bench msg: ó 77 dut msg: 2e  OOPS!
-         41 bench msg: p 50 dut msg: 21  OOPS!
-         42 bench msg: j ca dut msg: a0  OOPS!
-         43 bench msg: \ 3c dut msg: 21  OOPS!
-         44 bench msg: l cc dut msg: a0  OOPS!
+          1 bench msg: Ä 60 dut msg: 60
+          2 bench msg: A 21 dut msg: 21
+          3 bench msg: B 22 dut msg: 22
+          4 bench msg: D 24 dut msg: 24
+          5 bench msg: H 28 dut msg: 28
+          6 bench msg: Q b1 dut msg: b1
+          7 bench msg: " 82 dut msg: 82
+          8 bench msg: Ñ e4 dut msg: e4
+          9 bench msg: I a9 dut msg: a9
+         10 bench msg: S 33 dut msg: 33
+         11 bench msg: & 06 dut msg: 06
+         12 bench msg: å 6c dut msg: 6c
+         13 bench msg: X b8 dut msg: b8
+         14 bench msg: 1 11 dut msg: 11
+         15 bench msg: b 42 dut msg: 42
+         16 bench msg: Ö 65 dut msg: 65
+         17 bench msg: K 2b dut msg: 2b
+         18 bench msg: W b7 dut msg: b7
+         19 bench msg: . 8e dut msg: 8e
+         20 bench msg: ù 7d dut msg: 7d
+         21 bench msg: : 9a dut msg: 9a
+         22 bench msg: u 55 dut msg: 55
+         23 bench msg: k 4b dut msg: 4b
+         24 bench msg: ñ f6 dut msg: f6
+         25 bench msg: - 8d dut msg: 8d
+         26 bench msg: 6 96 dut msg: 96
+         27 bench msg: d 44 dut msg: 44
+         28 bench msg: b 42 dut msg: 42
+         29 bench msg: ò 78 dut msg: 78
+         30 bench msg: á e7 dut msg: e7
+         31 bench msg: ! 81 dut msg: 81
+         32 bench msg: U 35 dut msg: 35
+         33 bench msg: ê f0 dut msg: f0
+         34 bench msg: â 69 dut msg: 69
+         35 bench msg: Ç e2 dut msg: e2
+         36 bench msg: U 35 dut msg: 35
+         37 bench msg: 3 93 dut msg: 93
+         38 bench msg: % 05 dut msg: 05
+         39 bench msg: B 22 dut msg: 22
+         40 bench msg: ó 77 dut msg: 77
+         41 bench msg: p 50 dut msg: 50
+         42 bench msg: j ca dut msg: ca
+         43 bench msg: \ 3c dut msg: 3c
+         44 bench msg: l cc dut msg: cc
          45 bench msg: A 21 dut msg: 21
-         46 bench msg: b 42 dut msg: a0  OOPS!
-         47 bench msg: Ä 60 dut msg: 21  OOPS!
-         48 bench msg: \ 3c dut msg: a0  OOPS!
-         49 bench msg: ê f0 dut msg: 21  OOPS!
-         50 bench msg: s 53 dut msg: a0  OOPS!
-         51 bench msg: 0 90 dut msg: 21  OOPS!
-         52 bench msg: N 2e dut msg: a0  OOPS!
-         53 bench msg: ê f0 dut msg: 21  OOPS!
-         54 bench msg: i c9 dut msg: a0  OOPS!
-         55 bench msg: { db dut msg: 21  OOPS!
-         56 bench msg: " 82 dut msg: a0  OOPS!
-         57 bench msg: " 82 dut msg: 21  OOPS!
-         58 bench msg: ö fa dut msg: a0  OOPS!
-         59 bench msg: g 47 dut msg: 21  OOPS!
-         60 bench msg: - 8d dut msg: a0  OOPS!
-         61 bench msg: U 35 dut msg: cc  OOPS!
-         62 bench msg: ! 81 dut msg: 09  OOPS!
-         63 bench msg: [ bb dut msg: 21  OOPS!
-score =           2/64
+         46 bench msg: b 42 dut msg: 42
+         47 bench msg: Ä 60 dut msg: 60
+         48 bench msg: \ 3c dut msg: 3c
+         49 bench msg: ê f0 dut msg: f0
+         50 bench msg: s 53 dut msg: 53
+         51 bench msg: 0 90 dut msg: 90
+         52 bench msg: N 2e dut msg: 2e
+         53 bench msg: ê f0 dut msg: f0
+         54 bench msg: i c9 dut msg: c9
+         55 bench msg: { db dut msg: db
+         56 bench msg: " 82 dut msg: 82
+         57 bench msg: " 82 dut msg: 82
+         58 bench msg: ö fa dut msg: fa
+         59 bench msg: g 47 dut msg: 47
+         60 bench msg: - 8d dut msg: 8d
+         61 bench msg: U 35 dut msg: 35
+         62 bench msg: ! 81 dut msg: 81
+         63 bench msg: [ bb dut msg: bb
+score =          64/64

@@ -13,24 +13,24 @@ vALU
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
 Z2 DXx4 work 11 definitions 0 22 68F[S^_UH<okW6n>8J8DQ3
 DXx4 work 11 ALU_sv_unit 0 22 <omCO>Vg^LT6W3FA7S;=L2
-Z3 !s110 1615699323
+Z3 !s110 1615858108
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 !i10b 1
-!s100 D@=nn1bAODkQn57WG2`KU2
-Iz16nAENaO8nZK<=NO=M0C3
+!s100 m]7e9CPgEFOUG5Y>nLYzZ0
+I^YanQUXhH`zS5?:3Zg5Jl0
 !s105 ALU_sv_unit
 S1
 R0
-Z5 w1615431727
+Z5 w1615853830
 Z6 8C:/Users/Diego/Desktop/lucas_processor/verilog_code/ALU.sv
 Z7 FC:/Users/Diego/Desktop/lucas_processor/verilog_code/ALU.sv
 !i122 6
 L0 9 36
 Z8 OV;L;2020.1;71
 31
-Z9 !s108 1615699323.000000
+Z9 !s108 1615858108.000000
 Z10 !s107 C:/Users/Diego/Desktop/lucas_processor/verilog_code/ALU.sv|
 Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Diego/Desktop/lucas_processor/verilog_code|C:/Users/Diego/Desktop/lucas_processor/verilog_code/ALU.sv|
 !i113 1
@@ -125,10 +125,10 @@ R14
 n@ctrl_sv_unit
 vdata_mem
 R1
-Z20 !s110 1615699322
+R3
 !i10b 1
 !s100 a[VB3VCP3HbSM65R_D`IX2
-Z21 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z20 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IdZMX@5011TmGNLJhihg>M1
 R4
 S1
@@ -142,7 +142,7 @@ R8
 r1
 !s85 0
 31
-Z22 !s108 1615699322.000000
+R9
 !s107 C:/Users/Diego/Desktop/lucas_processor/verilog_code/data_mem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Diego/Desktop/lucas_processor/verilog_code|C:/Users/Diego/Desktop/lucas_processor/verilog_code/data_mem.sv|
 !i113 1
@@ -151,10 +151,10 @@ R13
 R14
 Xdefinitions
 R1
-R20
+Z21 !s110 1615858107
 !i10b 1
 !s100 P?X^gaS_Dz05O<H7i?b`n0
-R21
+R20
 I68F[S^_UH<okW6n>8J8DQ3
 V68F[S^_UH<okW6n>8J8DQ3
 S1
@@ -168,7 +168,7 @@ R8
 r1
 !s85 0
 31
-R22
+Z22 !s108 1615858107.000000
 !s107 C:/Users/Diego/Desktop/lucas_processor/verilog_code/Definitions.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Diego/Desktop/lucas_processor/verilog_code|C:/Users/Diego/Desktop/lucas_processor/verilog_code/Definitions.sv|
 !i113 1
@@ -177,15 +177,15 @@ R13
 R14
 vencrypt_tb
 R1
-!s110 1615699344
+!s110 1615858125
 !i10b 1
 !s100 KoLERK1Mo5JlV55D7Cz^]3
-R21
+R20
 IOc<0C5fKjU@mHgnIQB`:z3
 R4
 S1
 R0
-w1615422148
+w1615858049
 8C:/Users/Diego/Desktop/lucas_processor/verilog_code/program1_tb1.sv
 FC:/Users/Diego/Desktop/lucas_processor/verilog_code/program1_tb1.sv
 !i122 8
@@ -194,7 +194,7 @@ R8
 r1
 !s85 0
 31
-!s108 1615699344.000000
+!s108 1615858125.000000
 !s107 C:/Users/Diego/Desktop/lucas_processor/verilog_code/program1_tb1.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/Diego/Desktop/lucas_processor/verilog_code/program1_tb1.sv|
 !i113 1
@@ -202,10 +202,10 @@ o-work work
 R14
 vInstFetch
 R1
-R20
+R21
 !i10b 1
 !s100 R>P9[^AS7LFa^lM6jgc>30
-R21
+R20
 IZR:7am_0gPoih9aj3nIF>3
 R4
 S1
@@ -232,7 +232,7 @@ R1
 R3
 !i10b 1
 !s100 O>DCgSoTXBU@oH<_Zg@R<0
-R21
+R20
 IABJ:=;nY[fiTXCXSz`dMh2
 R4
 S1
@@ -258,7 +258,7 @@ vRegFile
 R1
 R2
 DXx4 work 15 RegFile_sv_unit 0 22 Z:fNZmPSGaEcJm>e:=meU1
-R20
+R3
 R4
 r1
 !s85 0
@@ -275,7 +275,7 @@ Z25 FC:/Users/Diego/Desktop/lucas_processor/verilog_code/RegFile.sv
 L0 11 44
 R8
 31
-R22
+R9
 Z26 !s107 C:/Users/Diego/Desktop/lucas_processor/verilog_code/RegFile.sv|
 Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Diego/Desktop/lucas_processor/verilog_code|C:/Users/Diego/Desktop/lucas_processor/verilog_code/RegFile.sv|
 !i113 1
@@ -286,7 +286,7 @@ n@reg@file
 XRegFile_sv_unit
 R1
 R2
-R20
+R3
 VZ:fNZmPSGaEcJm>e:=meU1
 r1
 !s85 0
@@ -303,7 +303,7 @@ R25
 L0 10 0
 R8
 31
-R22
+R9
 R26
 R27
 !i113 1
