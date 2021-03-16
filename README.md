@@ -5,6 +5,7 @@ This document describes the architecture of the Lucas Processor
 
 This CPU is a very reduced RISC architecture and uses MIPS as inspiration. The big difference is that it uses 9-bit instructions and not a bit more! It was designed to do specific tasks well and not much else. This is not a general purpose architecture. The way Lucas is able to operate with only 9 bits is by specifying three special registers. The first register, r0, is used only for loading immediate values. The next two registers, r1 and r2, are operation registers. All arithmetic is done using r1 and r2 as operands. There are a total of 16 registers (r0 - r15), the three special registers included. We refer to r3 - r15 as general registers.
 
+
 ## <p align=center>INSTRUCTION SYNTAX</p>
 What follows are the specifications for the three main types of instructions our CPU can handle:
 - R-Type: any instruction which uses both operation registers for arithmetic (e.g. add, sub, etc.)
@@ -75,3 +76,20 @@ If the first bit of any instruction is a 1 then we treat it as an I-Type. There 
 ### Example I-Type Instructions
     1 10110011 – load immediate value of 179 into register 0 
     1 00110010 – load immediate value of 50 into register 0 
+
+### Control Bit Table
+| Command | BranchEn | RegWriteEn | MemWriteEn |
+| :-----: | :------: | :--------: | :--------: |
+| add | 0 | 1 | 0 |    
+| xor | 0 | 1 | 0 |
+| and | 0 | 1 | 0 |
+| sll | 0 | 1 | 0 |
+| slt | 0 | 1 | 0 |
+| beq | 1 | 0 | 0 |
+| or | 0 | 1 | 0 |
+| srl | 0 | 1 | 0 |
+| lb | 0 | 1 | 0 |
+| sb | 0 | 0 | 1 |
+| fig | 0 | 1 | 0 |
+| fgo | 0 | 1 | 0 |
+| is | 0 | 1 | 0 |

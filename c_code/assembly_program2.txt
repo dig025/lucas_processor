@@ -4,8 +4,8 @@
   is  0      
   fig r3        // r3 = 0 outer loop counter
   fig r4        // r4 = 0 inner loop counter
-  is  9       
-  fig r5        // r5 = 9 max loop itr
+  is  10       
+  fig r5        // r5 = 10 max loop itr
   is  64        
   fig r6        // r6 = 64 start of memory for encrypted message
   is  0x20      
