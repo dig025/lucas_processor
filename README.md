@@ -76,8 +76,9 @@ If the first bit of any instruction is a 1 then we treat it as an I-Type. There 
 ### Example I-Type Instructions
     1 10110011 – load immediate value of 179 into register 0 
     1 00110010 – load immediate value of 50 into register 0 
-
-### Control Bit Table
+    
+## <p align=center>DATAPATH</p>
+## Control Bit Table
 | Command | BranchEn | RegWriteEn | MemWriteEn |
 | :-----: | :------: | :--------: | :--------: |
 | add | 0 | 1 | 0 |    
@@ -93,3 +94,5 @@ If the first bit of any instruction is a 1 then we treat it as an I-Type. There 
 | fig | 0 | 1 | 0 |
 | fgo | 0 | 1 | 0 |
 | is | 0 | 1 | 0 |
+
+see RTLviewer.pdf for more info
